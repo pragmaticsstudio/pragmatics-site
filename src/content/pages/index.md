@@ -19,7 +19,7 @@ hero:
 <li><img src="/webflow/images/659c2fa4e3e7e0bb39221121/659c331210c9f87cf745fa32_Fintech-Cadence-white.png" alt="Fintech Cadence" loading="lazy"/></li>
 </ul>
 
-[Explore Case Studies →](/case-studies/)
+<p class="clean-cta"><a href="/case-studies/" class="clean-button">Explore Case Studies →</a></p>
 
 ## Services
 

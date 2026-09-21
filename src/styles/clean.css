@@ -94,17 +94,26 @@
 
 .clean-button {
 	display: inline-block;
-	padding: 0.85rem 1.75rem;
-	border-radius: 999px;
+	padding: 0.9rem 2rem;
+	border-radius: 0;
 	background: var(--cp-accent);
 	color: var(--bg-color, #000b29);
 	font-weight: 700;
 	text-decoration: none;
 }
 
-.clean-button:hover {
+.clean-prose a.clean-button {
+	color: var(--bg-color, #000b29);
+}
+
+.clean-button:hover,
+.clean-prose a.clean-button:hover {
 	text-decoration: none;
 	opacity: 0.85;
+}
+
+.clean-cta {
+	text-align: center;
 }
 
 /* --- Hero --- */
@@ -151,6 +160,10 @@
 	padding: 0;
 }
 
+.clean-client-logos li {
+	border-radius: 0;
+}
+
 .clean-client-logos img {
 	height: auto;
 	max-height: 3rem;
@@ -159,6 +172,7 @@
 	object-fit: contain;
 	display: block;
 	opacity: 0.9;
+	border-radius: 0;
 }
 
 /* --- Card grid (services, projects, news) --- */
@@ -180,16 +194,15 @@
 .clean-card {
 	background: var(--cp-card-bg);
 	border: 1px solid var(--cp-border);
-	border-radius: 1rem;
+	border-radius: 0;
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
-	transition: border-color 0.15s ease, transform 0.15s ease;
+	transition: border-color 0.15s ease;
 }
 
 .clean-card:hover {
 	border-color: rgba(254, 248, 237, 0.32);
-	transform: translateY(-2px);
 }
 
 .clean-card p {
@@ -200,17 +213,17 @@
 .clean-card img {
 	margin: -1.5rem -1.5rem 1.25rem;
 	width: calc(100% + 3rem);
-	border-radius: 1rem 1rem 0 0;
+	border-radius: 0;
 	aspect-ratio: 16 / 10;
 	object-fit: cover;
 }
 
-/* --- Project list (side-by-side image + text) --- */
+/* --- Project list (side-by-side image + text, no card chrome) --- */
 
 .clean-project-list {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
+	gap: var(--cp-space-lg);
 	margin: var(--cp-space-sm) 0 var(--cp-space-md);
 }
 
@@ -218,22 +231,12 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 1.5rem;
-	background: var(--cp-card-bg);
-	border: 1px solid var(--cp-border);
-	border-radius: 1.25rem;
-	padding: 1.25rem;
-	transition: border-color 0.15s ease;
-}
-
-.clean-project-card:hover {
-	border-color: rgba(254, 248, 237, 0.32);
 }
 
 @media (min-width: 768px) {
 	.clean-project-card {
 		grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
 		align-items: center;
-		padding: 1.5rem;
 		gap: 2.5rem;
 	}
 
@@ -242,12 +245,16 @@
 	}
 }
 
+.clean-project-card__media {
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	border-radius: 0.85rem;
+}
+
 .clean-project-card__media img {
 	width: 100%;
 	height: 100%;
-	min-height: 14rem;
 	object-fit: cover;
-	border-radius: 0.85rem;
 	display: block;
 }
 
