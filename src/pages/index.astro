@@ -1,8 +1,12 @@
 ---
-import Page from "../components/Page.astro";
-import { getSourcePage } from "../lib/source-pages";
+import { getCollection, render } from "astro:content";
+import Base from "../layouts/Base.astro";
 
-const page = getSourcePage("index.html");
+const page = (await getCollection("pages")).find((entry) => entry.data.route === "");
+if (!page) throw new Error("Homepage content is missing");
+const { Content } = await render(page);
 ---
 
-<Page {...page} />
+<Base title={page.data.title} description={page.data.description}>
+	<Content />
+</Base>

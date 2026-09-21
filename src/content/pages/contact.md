@@ -1,0 +1,7 @@
+---
+title: "Contact"
+description: ""
+route: "contact"
+---
+
+<section class="section-contact-hero"><div class="page-padding"><div class="container-xxlarge"><div class="padding-vertical padding-xlarge"><div class="contact-hero-grid"><div id="w-node-_9cb69919-907b-de77-5089-74e3ea5042b0-392211ed" class="contact-hero-grid-left"><div class="margin-bottom margin-xxhuge"><div class="margin-bottom margin-small"><div class="text-meta">Contact</div></div><h2>Let&#x27;s explore the possibilities UX can unlock for your product.</h2></div><div><div class="margin-bottom margin-small"><div class="text-meta">Find us on</div></div><div class="subnav small"><a href="https://www.linkedin.com/company/pragmatics-studio" target="_blank" class="badge small link w-inline-block"><div class="text-meta-small">IN</div></a><a href="https://www.youtube.com/@pragmaticsstudio" target="_blank" class="badge small link w-inline-block"><div class="text-meta-small">yT</div></a></div></div></div><div id="w-node-_9b86eb6a-d441-64a7-0899-353f3bba90ff-392211ed" class="contact-hero-grid-right"><div class="max-width-large"><div class="form-wrapper w-form"><div class="form-message-success w-form-done"><div>Thank you! Your submission has been received!</div></div><div class="form-message-error w-form-fail"><div>Oops! Something went wrong while submitting the form.</div></div></div></div></div></div></div></div></div></section><section class="section-contact-faq"><div class="page-padding"><div class="container-xxlarge"><div class="line"></div></div></div></section>
