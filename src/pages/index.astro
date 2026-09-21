@@ -1,0 +1,8 @@
+---
+import Page from "../components/Page.astro";
+import { getSourcePage } from "../lib/source-pages";
+
+const page = getSourcePage("index.html");
+---
+
+<Page {...page} />

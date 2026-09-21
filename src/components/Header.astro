@@ -1,0 +1,29 @@
+---
+const links = [
+	["Home", "/"],
+	["Services", "/services/"],
+	["Projects", "/case-studies/"],
+	["Blog", "/blog/"],
+	["About", "/studio/"],
+];
+---
+
+<header class="header">
+	<div class="navbar-wrapper">
+		<div class="navbar">
+			<div class="page-padding">
+				<div class="container-xxlarge">
+					<div class="navbar-inner">
+						<a href="/" class="animation-link w-nav-brand" aria-label="Pragmatics home">
+							<span class="nav-text">Pragmatics</span>
+						</a>
+						<nav class="nav-menu" aria-label="Main navigation">
+							{links.map(([label, href]) => <a href={href} class="navbar-menu-item-link"><span class="nav-text">{label}</span></a>)}
+							<a href="/contact/" class="navbar-menu-item-link"><span class="nav-text">Contact</span></a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

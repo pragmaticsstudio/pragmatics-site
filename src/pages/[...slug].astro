@@ -1,0 +1,20 @@
+---
+import Page from "../components/Page.astro";
+import { getSourcePage, getSourcePaths } from "../lib/source-pages";
+
+export function getStaticPaths() {
+	return getSourcePaths()
+		.filter((sourcePath) => sourcePath !== "index.html")
+		.map((sourcePath) => {
+			const withoutExtension = sourcePath.replace(/\.html$/, "");
+			const route = withoutExtension.endsWith("/index")
+				? withoutExtension.slice(0, -"/index".length)
+				: withoutExtension;
+			return { params: { slug: route }, props: { sourcePath } };
+		});
+}
+
+const page = getSourcePage(Astro.props.sourcePath);
+---
+
+<Page {...page} />

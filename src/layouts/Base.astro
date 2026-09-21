@@ -1,0 +1,31 @@
+---
+import "../styles/webflow.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+	 title: string;
+	 description?: string;
+	 children: any;
+}
+
+const { title, description, children } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		{description && <meta name="description" content={description} />}
+		<title>{title}</title>
+	</head>
+	<body class="body">
+		<div class="page-wrapper">
+			<Header />
+			<main class="main-wrapper">{children}</main>
+			<Footer />
+		</div>
+	</body>
+</html>
