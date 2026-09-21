@@ -56,7 +56,6 @@ const clean = (html: string, relativePath: string) => {
 	body = body.replace(/<noscript\b[\s\S]*?<\/noscript>/gi, "");
 	body = body.replace(/<form\b[\s\S]*?<\/form>/gi, "");
 	body = body.replace(/<a\b[^>]*href="(?:\.\.\/)?(?:contact|book-a-call)(?:\/index)?\.html"[^>]*>[\s\S]*?<\/a>/gi, "");
-	body = body.replace(/<a\b[^>]*>[\s\S]*?(?:Start a project|Get in touch|Contact us|Book a Call|Book a call)[\s\S]*?<\/a>/gi, "");
 	body = body.replace(/<section\b[^>]*class="[^"]*section-cta-contact[^"]*"[^>]*>[\s\S]*?<\/section>/i, "");
 	if (relativePath === "contact.html" || relativePath === "book-a-call.html") {
 		body = body.replace(/<section\b[^>]*class="[^"]*section-contact-offices[^"]*"[^>]*>[\s\S]*?<\/section>/i, "");
