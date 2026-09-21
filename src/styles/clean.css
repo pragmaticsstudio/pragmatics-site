@@ -224,13 +224,15 @@
 }
 
 .clean-grid--services .clean-card {
-	flex: 1 1 13rem;
-	max-width: 20rem;
+	flex: 1 1 0;
+	min-width: 13rem;
+	max-width: 24rem;
 }
 
 .clean-grid--news .clean-card {
-	flex: 1 1 14rem;
-	max-width: 22rem;
+	flex: 1 1 0;
+	min-width: 14rem;
+	max-width: 24rem;
 }
 
 .clean-card {
@@ -240,7 +242,6 @@
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	transition: border-color 0.15s ease;
 }
 
@@ -256,9 +257,11 @@
 .clean-card img {
 	margin: -1.5rem -1.5rem 1.25rem;
 	width: calc(100% + 3rem);
+	max-width: none;
 	border-radius: 0;
 	aspect-ratio: 16 / 10;
 	object-fit: cover;
+	object-position: center;
 }
 
 .clean-card--news h3 {
