@@ -54,41 +54,81 @@ Experience personalized art direction that captures the essence of your business
 
 ## Projects
 
-<div class="clean-grid clean-grid--projects">
-<div class="clean-card">
+<div class="clean-project-list">
+<div class="clean-project-card">
+<div class="clean-project-card__media">
 
 ![Magpie Literacy project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ad2494dfc6676f42e3b20d_Magpie%20-%20Tablet%20Mockup_4.png)
-### [Designing Joyful Literacy Solutions That Empower Every Child](/case-studies/magpie-literacy/)
+
+</div>
+<div class="clean-project-card__body">
+
+### Designing Joyful Literacy Solutions That Empower Every Child
 Teaming up with Magpie Literacy, we're crafting an educational app focused on boosting literacy among minority children in the US, leveraging insights from top literacy and educational experts to make English learning accessible and impactful.
 
+<a href="/case-studies/magpie-literacy/" class="clean-project-card__view">View Project →</a>
+
 </div>
-<div class="clean-card">
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
 
 ![Ground News project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba555817bbc2caf724bf36_Ground%20News%20-%20Cover.png)
-### [Breaking Echo Chambers for Better Media Literacy](/case-studies/ground-news/)
+
+</div>
+<div class="clean-project-card__body">
+
+### Breaking Echo Chambers for Better Media Literacy
 Reviving balanced conversations around the news by exposing political bias to news readers.
 
+<a href="/case-studies/ground-news/" class="clean-project-card__view">View Project →</a>
+
 </div>
-<div class="clean-card">
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
 
 ![Nectar project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba556813cba6c8e332ee46_Nectar%20-%20Cover.png)
-### [Streamlining Beekeeping Tools to Protect Bees and Boost Efficiency](/case-studies/nectar/)
+
+</div>
+<div class="clean-project-card__body">
+
+### Streamlining Beekeeping Tools to Protect Bees and Boost Efficiency
 Enabling commercial beekeepers to extract critical insights about their bee colonies.
 
+<a href="/case-studies/nectar/" class="clean-project-card__view">View Project →</a>
+
 </div>
-<div class="clean-card">
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
 
 ![Waverly project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba5573fd35c00c087d0b5a_Waverly%20-%20Cover.png)
-### [Redefining Social Spaces to Foster Healthier Conversations](/case-studies/waverly/)
-Empowering personalized social media with Waverly, we crafted an app that lets users shape their content experience using conversational AI, promoting focused engagement and meaningful digital interactions.
 
 </div>
-<div class="clean-card">
+<div class="clean-project-card__body">
+
+### Redefining Social Spaces to Foster Healthier Conversations
+Empowering personalized social media with Waverly, we crafted an app that lets users shape their content experience using conversational AI, promoting focused engagement and meaningful digital interactions.
+
+<a href="/case-studies/waverly/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
 
 ![Monthly Dignity project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba5589af9091aadfe572ec_Monthly%20Dignity%20-%20Cover.png)
-### [Building a Website to Support Menstrual Health and Equity](/case-studies/monthly-dignity/)
+
+</div>
+<div class="clean-project-card__body">
+
+### Building a Website to Support Menstrual Health and Equity
 We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal.
 
+<a href="/case-studies/monthly-dignity/" class="clean-project-card__view">View Project →</a>
+
+</div>
 </div>
 </div>
 

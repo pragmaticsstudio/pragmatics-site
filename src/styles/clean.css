@@ -2,7 +2,7 @@
    Palette matches --pragmatics-* tokens defined in webflow.css. */
 
 .clean-page {
-	--cp-container: 72rem;
+	--cp-container: 90rem;
 	--cp-space-sm: clamp(1rem, 2vw, 1.5rem);
 	--cp-space-md: clamp(1.5rem, 3vw, 2.5rem);
 	--cp-space-lg: clamp(2.5rem, 6vw, 5rem);
@@ -152,10 +152,13 @@
 }
 
 .clean-client-logos img {
-	height: 1.5rem;
+	height: auto;
+	max-height: 3rem;
 	width: auto;
+	max-width: 11rem;
+	object-fit: contain;
 	display: block;
-	opacity: 0.75;
+	opacity: 0.9;
 }
 
 /* --- Card grid (services, projects, news) --- */
@@ -168,10 +171,6 @@
 
 .clean-grid--services {
 	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
-}
-
-.clean-grid--projects {
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .clean-grid--news {
@@ -204,6 +203,80 @@
 	border-radius: 1rem 1rem 0 0;
 	aspect-ratio: 16 / 10;
 	object-fit: cover;
+}
+
+/* --- Project list (side-by-side image + text) --- */
+
+.clean-project-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: var(--cp-space-sm) 0 var(--cp-space-md);
+}
+
+.clean-project-card {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	background: var(--cp-card-bg);
+	border: 1px solid var(--cp-border);
+	border-radius: 1.25rem;
+	padding: 1.25rem;
+	transition: border-color 0.15s ease;
+}
+
+.clean-project-card:hover {
+	border-color: rgba(254, 248, 237, 0.32);
+}
+
+@media (min-width: 768px) {
+	.clean-project-card {
+		grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+		align-items: center;
+		padding: 1.5rem;
+		gap: 2.5rem;
+	}
+
+	.clean-project-card:nth-child(even) .clean-project-card__media {
+		order: 2;
+	}
+}
+
+.clean-project-card__media img {
+	width: 100%;
+	height: 100%;
+	min-height: 14rem;
+	object-fit: cover;
+	border-radius: 0.85rem;
+	display: block;
+}
+
+.clean-project-card__body h3 {
+	font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+	margin: 0 0 0.65rem;
+}
+
+.clean-project-card__body p {
+	max-width: none;
+	margin-bottom: 1rem;
+}
+
+.clean-project-card__view {
+	display: inline-block;
+	font-size: 0.85rem;
+	font-weight: 600;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 0.1rem;
+}
+
+.clean-prose a.clean-project-card__view {
+	color: var(--cp-muted);
+	text-decoration: none;
+}
+
+.clean-prose a.clean-project-card__view:hover {
+	color: var(--cp-accent);
+	text-decoration: none;
 }
 
 /* --- Meta list (case study client/year/timeline/website) --- */
