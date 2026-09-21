@@ -2,7 +2,7 @@
    Palette matches --pragmatics-* tokens defined in webflow.css. */
 
 .clean-page {
-	--cp-container: 90rem;
+	--cp-container: 112.5rem;
 	--cp-space-sm: clamp(1rem, 2vw, 1.5rem);
 	--cp-space-md: clamp(1.5rem, 3vw, 2.5rem);
 	--cp-space-lg: clamp(2.5rem, 6vw, 5rem);
@@ -18,7 +18,25 @@
 .clean-container {
 	max-width: var(--cp-container);
 	margin-inline: auto;
-	padding-inline: clamp(1.25rem, 4vw, 2rem);
+	padding-inline: 3rem;
+}
+
+@media (max-width: 991px) {
+	.clean-container {
+		padding-inline: 2.5rem;
+	}
+}
+
+@media (max-width: 767px) {
+	.clean-container {
+		padding-inline: 2rem;
+	}
+}
+
+@media (max-width: 479px) {
+	.clean-container {
+		padding-inline: 0;
+	}
 }
 
 /* --- Vertical rhythm --- */
@@ -195,20 +213,24 @@
 	border-radius: 0;
 }
 
-/* --- Card grid (services, projects, news) --- */
+/* --- Card grid (services, news) --- */
 
 .clean-grid {
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 1.25rem;
 	margin: var(--cp-space-sm) 0 var(--cp-space-md);
 }
 
-.clean-grid--services {
-	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+.clean-grid--services .clean-card {
+	flex: 1 1 13rem;
+	max-width: 20rem;
 }
 
-.clean-grid--news {
-	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+.clean-grid--news .clean-card {
+	flex: 1 1 14rem;
+	max-width: 22rem;
 }
 
 .clean-card {
@@ -218,6 +240,7 @@
 	padding: 1.5rem;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	transition: border-color 0.15s ease;
 }
 
