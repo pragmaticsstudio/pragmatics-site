@@ -135,7 +135,8 @@
 	font-size: 0.85rem;
 }
 
-.clean-cta {
+.clean-prose p.clean-cta {
+	max-width: none;
 	text-align: center;
 }
 
@@ -178,7 +179,8 @@
 	padding-block: var(--cp-space-md);
 }
 
-.clean-clients__label {
+.clean-prose p.clean-clients__label {
+	max-width: none;
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
