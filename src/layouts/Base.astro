@@ -19,6 +19,14 @@ const { title, description } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		{description && <meta name="description" content={description} />}
 		<title>{title}</title>
+		<style>
+			a,
+			a:hover,
+			a:focus,
+			a:visited {
+				text-decoration: none !important;
+			}
+		</style>
 	</head>
 	<body class="body">
 		<div class="page-wrapper">
