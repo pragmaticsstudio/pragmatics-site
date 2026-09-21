@@ -1,82 +1,223 @@
-/* Mobile-first base styles for pages migrated off the raw Webflow markup. */
+/* Mobile-first, brand-aligned styles for pages migrated off raw Webflow markup.
+   Palette matches --pragmatics-* tokens defined in webflow.css. */
 
 .clean-page {
-	--container-max: 72rem;
-	--space: clamp(2rem, 5vw, 5rem);
-	color: #1a1a1a;
+	--cp-container: 72rem;
+	--cp-space-sm: clamp(1rem, 2vw, 1.5rem);
+	--cp-space-md: clamp(1.5rem, 3vw, 2.5rem);
+	--cp-space-lg: clamp(2.5rem, 6vw, 5rem);
+	--cp-accent: var(--pragmatics-yellow, #fed66f);
+	--cp-muted: rgba(254, 248, 237, 0.68);
+	--cp-border: rgba(254, 248, 237, 0.14);
+	--cp-card-bg: rgba(254, 248, 237, 0.05);
+	color: var(--foreground-color, #fef8ed);
 	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 .clean-container {
-	max-width: var(--container-max);
+	max-width: var(--cp-container);
 	margin-inline: auto;
-	padding-inline: 1.25rem;
+	padding-inline: clamp(1.25rem, 4vw, 2rem);
 }
 
-.clean-section {
-	padding-block: var(--space);
-}
+/* --- Vertical rhythm --- */
 
-.clean-section + .clean-section {
-	border-top: 1px solid #e5e5e5;
-}
-
-.clean-hero {
-	text-align: center;
-	padding-block: clamp(2.5rem, 8vw, 6rem);
-}
-
-.clean-hero__eyebrow {
-	text-transform: uppercase;
-	letter-spacing: 0.08em;
-	font-size: 0.85rem;
-	color: #666;
-	margin-bottom: 0.75rem;
-}
-
-.clean-hero__heading {
-	font-size: clamp(2rem, 6vw, 3.5rem);
-	line-height: 1.1;
-	margin: 0 0 1rem;
-}
-
-.clean-hero__subheading {
-	font-size: clamp(1rem, 2.5vw, 1.35rem);
-	max-width: 40rem;
-	margin-inline: auto;
-	color: #444;
+.clean-prose > :first-child {
+	margin-top: 0;
 }
 
 .clean-prose h2 {
-	font-size: clamp(1.5rem, 4vw, 2rem);
-	margin-top: 2.5rem;
+	color: inherit;
+	font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	margin: var(--cp-space-lg) 0 var(--cp-space-sm);
+	padding-top: var(--cp-space-lg);
+	border-top: 1px solid var(--cp-border);
+}
+
+.clean-prose > h2:first-of-type {
+	border-top: none;
+	padding-top: 0;
+}
+
+.clean-prose h3 {
+	color: inherit;
+	font-size: 1.1rem;
+	line-height: 1.35;
+	margin: 0 0 0.5rem;
+}
+
+.clean-prose p {
+	margin: 0 0 var(--cp-space-sm);
+	color: var(--cp-muted);
+	max-width: 42rem;
+}
+
+.clean-prose ul {
+	margin: 0 0 var(--cp-space-sm);
+	padding-left: 1.25rem;
 }
 
 .clean-prose img {
 	max-width: 100%;
 	height: auto;
-	border-radius: 0.5rem;
+	border-radius: 0.75rem;
+	display: block;
+}
+
+/* --- Links & buttons --- */
+
+.clean-prose a,
+.clean-meta-list a {
+	color: var(--cp-accent);
+	text-decoration: none;
+	font-weight: 600;
+	transition: opacity 0.15s ease;
+}
+
+.clean-prose a:hover,
+.clean-meta-list a:hover {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.clean-prose h3 a {
+	color: inherit;
+	font-weight: inherit;
+}
+
+.clean-prose h3 a:hover {
+	color: var(--cp-accent);
 }
 
 .clean-button {
 	display: inline-block;
-	padding: 0.75rem 1.5rem;
+	padding: 0.85rem 1.75rem;
 	border-radius: 999px;
-	background: #1a1a1a;
-	color: #fff;
-	font-weight: 600;
+	background: var(--cp-accent);
+	color: var(--bg-color, #000b29);
+	font-weight: 700;
 	text-decoration: none;
 }
+
+.clean-button:hover {
+	text-decoration: none;
+	opacity: 0.85;
+}
+
+/* --- Hero --- */
+
+.clean-hero {
+	text-align: center;
+	padding-block: clamp(3rem, 10vw, 6.5rem);
+}
+
+.clean-hero__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: var(--cp-accent);
+	margin-bottom: 0.85rem;
+}
+
+.clean-hero__heading {
+	font-size: clamp(2.1rem, 6vw, 3.75rem);
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	margin: 0 0 1.1rem;
+	color: inherit;
+}
+
+.clean-hero__subheading {
+	font-size: clamp(1.05rem, 2vw, 1.3rem);
+	max-width: 38rem;
+	margin-inline: auto;
+	color: var(--cp-muted);
+}
+
+/* --- Client logos --- */
+
+.clean-client-logos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: clamp(1.5rem, 4vw, 3rem);
+	align-items: center;
+	justify-content: center;
+	margin: var(--cp-space-sm) 0 var(--cp-space-md);
+	list-style: none;
+	padding: 0;
+}
+
+.clean-client-logos img {
+	height: 1.5rem;
+	width: auto;
+	display: block;
+	opacity: 0.75;
+}
+
+/* --- Card grid (services, projects, news) --- */
+
+.clean-grid {
+	display: grid;
+	gap: 1.25rem;
+	margin: var(--cp-space-sm) 0 var(--cp-space-md);
+}
+
+.clean-grid--services {
+	grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.clean-grid--projects {
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.clean-grid--news {
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.clean-card {
+	background: var(--cp-card-bg);
+	border: 1px solid var(--cp-border);
+	border-radius: 1rem;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.clean-card:hover {
+	border-color: rgba(254, 248, 237, 0.32);
+	transform: translateY(-2px);
+}
+
+.clean-card p {
+	max-width: none;
+	flex-grow: 1;
+}
+
+.clean-card img {
+	margin: -1.5rem -1.5rem 1.25rem;
+	width: calc(100% + 3rem);
+	border-radius: 1rem 1rem 0 0;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+/* --- Meta list (case study client/year/timeline/website) --- */
 
 .clean-meta-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.5rem;
+	gap: clamp(1.5rem, 4vw, 3rem);
 	justify-content: center;
-	margin-top: 1.5rem;
+	margin: var(--cp-space-sm) 0 var(--cp-space-lg);
 	list-style: none;
 	padding: 0;
+	border-bottom: 1px solid var(--cp-border);
+	padding-bottom: var(--cp-space-md);
 }
 
 .clean-meta-list__item {
@@ -87,27 +228,23 @@
 	display: block;
 	font-size: 0.75rem;
 	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	color: #888;
-	margin-bottom: 0.25rem;
+	letter-spacing: 0.08em;
+	color: var(--cp-muted);
+	margin-bottom: 0.3rem;
 }
+
+/* --- Gallery --- */
 
 .clean-gallery {
 	display: grid;
-	grid-template-columns: 1fr;
-	gap: 1rem;
-	margin-top: 2rem;
-}
-
-@media (min-width: 640px) {
-	.clean-gallery {
-		grid-template-columns: repeat(2, 1fr);
-	}
+	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+	gap: 1.25rem;
+	margin-top: var(--cp-space-md);
 }
 
 .clean-gallery img {
 	width: 100%;
 	height: auto;
-	border-radius: 0.5rem;
+	border-radius: 0.75rem;
 	display: block;
 }
