@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://pragmaticsstudio.github.io/pragmatics-site',
-  base: '/pragmatics-site',
+  site: 'https://pragmatics.studio',
+  base: '/',
   build: { format: 'directory' },
 });

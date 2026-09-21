@@ -24,6 +24,6 @@ The static output is written to `dist/`.
 
 Pushes to `main` deploy through GitHub Actions to:
 
-https://pragmaticsstudio.github.io/pragmatics-site/
+https://pragmatics.studio/
 
 The original scrape is not required for builds. Generated directories such as `node_modules/`, `.astro/`, and `dist/` are intentionally ignored.
