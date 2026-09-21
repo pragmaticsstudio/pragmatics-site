@@ -8,8 +8,8 @@ hero:
   subheading: "We help your team create clear messaging and designs that your users will love with our high velocity, collaborative process."
 ---
 
-## Clients
-
+<div class="clean-clients">
+<p class="clean-clients__label">Clients</p>
 <ul class="clean-client-logos">
 <li><img src="/webflow/images/659c2fa4e3e7e0bb39221121/659c3310ed03ccd91dbd3f42_Ontario-white.png" alt="Ontario Government" loading="lazy"/></li>
 <li><img src="/webflow/images/659c2fa4e3e7e0bb39221121/659c32fe6991b1295ad576b2_aerdf-white.png" alt="AERDF" loading="lazy"/></li>
@@ -18,8 +18,8 @@ hero:
 <li><img src="/webflow/images/659c2fa4e3e7e0bb39221121/659c33069816233929660117_Studio-We-white.svg" alt="Studio We" loading="lazy"/></li>
 <li><img src="/webflow/images/659c2fa4e3e7e0bb39221121/659c331210c9f87cf745fa32_Fintech-Cadence-white.png" alt="Fintech Cadence" loading="lazy"/></li>
 </ul>
-
-<p class="clean-cta"><a href="/case-studies/" class="clean-button">Explore Case Studies →</a></p>
+<p class="clean-cta"><a href="/case-studies/" class="clean-button clean-button--small">Explore Case Studies →</a></p>
+</div>
 
 ## Services
 
@@ -27,25 +27,25 @@ hero:
 <div class="clean-card">
 
 ### Strategy
-Unlock fresh insights and craft a product strategy that drives impact where it matters most. [Read More →](/services/#strategy)
+Unlock fresh insights and craft a product strategy that drives impact where it matters most.
 
 </div>
 <div class="clean-card">
 
 ### UI/UX Design
-Break through assumptions with user-centered design that engages and propels your business forward. [Read More →](/services/#uxui)
+Break through assumptions with user-centered design that engages and propels your business forward.
 
 </div>
 <div class="clean-card">
 
 ### Research
-Discover a tailored approach that creates branding your customers love and grows your business. [Read More →](/services/#strategy)
+Discover a tailored approach that creates branding your customers love and grows your business.
 
 </div>
 <div class="clean-card">
 
 ### Branding
-Experience personalized art direction that captures the essence of your business—and you. [Read More →](/services/#branding)
+Experience personalized art direction that captures the essence of your business—and you.
 
 </div>
 </div>
@@ -141,18 +141,21 @@ We've worked as full-time designers, freelancers, course instructors, workshop l
 ## Latest News
 
 <div class="clean-grid clean-grid--news">
-<div class="clean-card">
+<div class="clean-card clean-card--news">
 
+![Spotify has an AI problem](/webflow/images/659c2fa4e3e7e0bb3922119d/6927c537652b692f35d08b02_AI-music-image%20Large.jpeg)
 ### [Spotify has an AI problem](/post/spotify-has-an-ai-problem/)
 
 </div>
-<div class="clean-card">
+<div class="clean-card clean-card--news">
 
+![The Art of Taste-Building with UX and AI](/webflow/images/659c2fa4e3e7e0bb3922119d/67464b1c727869dcce995d02_AI,%20UX,%20and%20the%20Art%20of%20Taste-Building.png)
 ### [The Art of Taste-Building with UX and AI](/post/the-art-of-taste-building-with-ux-and-ai/)
 
 </div>
-<div class="clean-card">
+<div class="clean-card clean-card--news">
 
+![Can AI Challenge Us to Think Better?](/webflow/images/659c2fa4e3e7e0bb3922119d/672d2adef6ce1e129f505e83_AI%20that%20challenges.png)
 ### [Can AI Challenge Us to Think Better? Insights for Building Responsible Platforms](/post/can-ai-challenge-us-to-think-better-insights-for-building-responsible-platforms/)
 
 </div>
