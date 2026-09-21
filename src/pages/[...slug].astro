@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
+import Hero from "../components/clean/Hero.astro";
 
 export async function getStaticPaths() {
 	const pages = await getCollection("pages");
@@ -11,8 +12,20 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const { data } = entry;
 ---
 
 <Base title={entry.data.title} description={entry.data.description}>
-	<Content />
+	{data.clean ? (
+		<div class="clean-page">
+			<div class="clean-container">
+				{data.hero && <Hero {...data.hero} />}
+				<div class="clean-prose">
+					<Content />
+				</div>
+			</div>
+		</div>
+	) : (
+		<Content />
+	)}
 </Base>

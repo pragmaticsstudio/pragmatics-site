@@ -1,0 +1,22 @@
+---
+interface Item {
+	label: string;
+	value: string;
+	href?: string;
+}
+
+interface Props {
+	items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<ul class="clean-meta-list">
+	{items.map((item) => (
+		<li class="clean-meta-list__item">
+			<span class="clean-meta-list__label">{item.label}</span>
+			{item.href ? <a href={item.href}>{item.value}</a> : <span>{item.value}</span>}
+		</li>
+	))}
+</ul>

@@ -1,0 +1,113 @@
+/* Mobile-first base styles for pages migrated off the raw Webflow markup. */
+
+.clean-page {
+	--container-max: 72rem;
+	--space: clamp(2rem, 5vw, 5rem);
+	color: #1a1a1a;
+	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+	line-height: 1.5;
+}
+
+.clean-container {
+	max-width: var(--container-max);
+	margin-inline: auto;
+	padding-inline: 1.25rem;
+}
+
+.clean-section {
+	padding-block: var(--space);
+}
+
+.clean-section + .clean-section {
+	border-top: 1px solid #e5e5e5;
+}
+
+.clean-hero {
+	text-align: center;
+	padding-block: clamp(2.5rem, 8vw, 6rem);
+}
+
+.clean-hero__eyebrow {
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	font-size: 0.85rem;
+	color: #666;
+	margin-bottom: 0.75rem;
+}
+
+.clean-hero__heading {
+	font-size: clamp(2rem, 6vw, 3.5rem);
+	line-height: 1.1;
+	margin: 0 0 1rem;
+}
+
+.clean-hero__subheading {
+	font-size: clamp(1rem, 2.5vw, 1.35rem);
+	max-width: 40rem;
+	margin-inline: auto;
+	color: #444;
+}
+
+.clean-prose h2 {
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	margin-top: 2.5rem;
+}
+
+.clean-prose img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+}
+
+.clean-button {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	border-radius: 999px;
+	background: #1a1a1a;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.clean-meta-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	justify-content: center;
+	margin-top: 1.5rem;
+	list-style: none;
+	padding: 0;
+}
+
+.clean-meta-list__item {
+	text-align: center;
+}
+
+.clean-meta-list__label {
+	display: block;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	color: #888;
+	margin-bottom: 0.25rem;
+}
+
+.clean-gallery {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+@media (min-width: 640px) {
+	.clean-gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.clean-gallery img {
+	width: 100%;
+	height: auto;
+	border-radius: 0.5rem;
+	display: block;
+}
