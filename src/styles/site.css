@@ -1,0 +1,30 @@
+/*
+ * Small set of targeted fixes layered on top of the Webflow export in
+ * webflow.css. Kept separate so the export can be refreshed later without
+ * losing these overrides.
+ */
+
+/* The rich-text body copy in blog posts / case studies contains genuine
+ * inline hyperlinks with no Webflow class, so they were falling back to the
+ * browser default (permanently underlined, default blue). Give them a
+ * standard, on-brand treatment instead: coloured text with an underline,
+ * and a brand-colour hover state. */
+.w-richtext a {
+	color: inherit;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+}
+
+.w-richtext a:hover,
+.w-richtext a:focus {
+	color: var(--cta-color);
+}
+
+/* The "We're instructors at heart" block never collapses to a single
+ * column on small screens, so the image and text get squeezed side by
+ * side instead of stacking like the rest of the two-column sections. */
+@media screen and (max-width: 991px) {
+	.div-block-10 {
+		flex-direction: column;
+	}
+}
