@@ -1,9 +1,15 @@
 ---
+import Base from "../layouts/Base.astro";
 ---
-<html lang="en">
-  <head><meta charset="utf-8" /><title>Page not found | Pragmatics</title></head>
-  <body>
-    <h1>Page not found</h1>
-    <p><a href="/">Back to the homepage</a></p>
-  </body>
-</html>
+<Base title="Page not found | Pragmatics">
+	<div class="clean-page">
+		<div class="clean-container">
+			<div class="clean-hero">
+				<p class="clean-hero__eyebrow">404</p>
+				<h1 class="clean-hero__heading">Page not found</h1>
+				<p class="clean-hero__subheading">The page you’re looking for doesn’t exist.</p>
+				<p><a class="clean-button" href="/">Back to the homepage</a></p>
+			</div>
+		</div>
+	</div>
+</Base>

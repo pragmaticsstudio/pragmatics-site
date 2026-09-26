@@ -13,29 +13,18 @@
 	color: var(--foreground-color, #fef8ed);
 	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 	line-height: 1.6;
+	isolation: isolate;
 }
 
 .clean-container {
 	max-width: var(--cp-container);
 	margin-inline: auto;
-	padding-inline: 3rem;
+	padding-inline: clamp(1rem, 4vw, 3rem);
 }
 
 @media (max-width: 991px) {
 	.clean-container {
-		padding-inline: 2.5rem;
-	}
-}
-
-@media (max-width: 767px) {
-	.clean-container {
-		padding-inline: 2rem;
-	}
-}
-
-@media (max-width: 479px) {
-	.clean-container {
-		padding-inline: 0;
+		padding-inline: clamp(1rem, 4vw, 2.5rem);
 	}
 }
 
@@ -43,6 +32,11 @@
 
 .clean-prose > :first-child {
 	margin-top: 0;
+}
+
+.clean-prose {
+	overflow-wrap: break-word;
+	word-break: normal;
 }
 
 .clean-prose h2 {
@@ -71,6 +65,7 @@
 	margin: 0 0 var(--cp-space-sm);
 	color: var(--cp-muted);
 	max-width: 42rem;
+	text-wrap: pretty;
 }
 
 .clean-prose ul {
@@ -83,6 +78,10 @@
 	height: auto;
 	border-radius: 0.75rem;
 	display: block;
+}
+
+.clean-prose :where(h1, h2, h3, h4, h5, h6, p, li, a) {
+	overflow-wrap: anywhere;
 }
 
 /* --- Links & buttons --- */
@@ -379,4 +378,61 @@
 	height: auto;
 	border-radius: 0.75rem;
 	display: block;
+}
+
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	background: rgba(0, 11, 41, 0.92);
+	backdrop-filter: blur(8px);
+	border-bottom: 1px solid rgba(254, 248, 237, 0.14);
+}
+
+.site-header__inner {
+	max-width: 112.5rem;
+	margin-inline: auto;
+	padding: 1rem clamp(1rem, 4vw, 3rem);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1.25rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-logo {
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.site-nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.35rem 0.9rem;
+}
+
+.site-nav__link {
+	font-size: 0.9rem;
+	color: var(--cp-muted);
+	text-decoration: none;
+}
+
+.site-nav__link:hover {
+	color: var(--cp-accent);
+}
+
+.site-footer {
+	border-top: 1px solid var(--cp-border);
+	margin-top: var(--cp-space-lg);
+}
+
+.site-footer__inner {
+	max-width: 112.5rem;
+	margin-inline: auto;
+	padding: 1.1rem clamp(1rem, 4vw, 3rem) 1.6rem;
+	color: var(--cp-muted);
+	font-size: 0.9rem;
 }
