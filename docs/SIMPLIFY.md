@@ -30,6 +30,11 @@ Every task below is a GitHub issue; the issue has the detailed steps and the
 2. **Look the same, or better.** Reuse the existing `clean-*` classes before
    adding CSS. Check every page you touch at phone width (375px) and desktop
    width.
+   The look is part of the design: the thin frame lines down both sides of the
+   page, the hairline dividers above section headings and under heroes, the
+   bordered square-cornered cards, the navy, cream and yellow palette, and the
+   square buttons. Don't remove or restyle them, and check they still hold on
+   every page you touch.
 3. **Don't delete pages on your own.** Which legacy pages stay is the owner's
    call on [#6](https://github.com/pragmaticsstudio/pragmatics-site/issues/6).
 4. **`npm run check` must not get worse.** Once
