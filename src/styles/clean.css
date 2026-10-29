@@ -375,9 +375,9 @@
 }
 
 .clean-gallery {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-	gap: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	gap: var(--cp-space-md);
 	margin-top: var(--cp-space-md);
 }
 
@@ -386,6 +386,16 @@
 	height: auto;
 	border-radius: 0.75rem;
 	display: block;
+}
+
+/* Images placed in a case study's text run full width, like the cover. */
+.clean-story p:has(> img) {
+	max-width: none;
+	margin: var(--cp-space-md) 0;
+}
+
+.clean-story img {
+	width: 100%;
 }
 
 .site-header {

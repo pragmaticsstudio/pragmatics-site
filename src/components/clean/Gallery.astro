@@ -1,4 +1,6 @@
 ---
+import { imageSize } from "../../lib/image-size.mjs";
+
 interface Image {
 	src: string;
 	alt?: string;
@@ -13,6 +15,6 @@ const { images } = Astro.props;
 
 <div class="clean-gallery">
 	{images.map((image) => (
-		<img src={image.src} alt={image.alt ?? ""} loading="lazy" />
+		<img src={image.src} alt={image.alt ?? ""} loading="lazy" {...imageSize(image.src)} />
 	))}
 </div>

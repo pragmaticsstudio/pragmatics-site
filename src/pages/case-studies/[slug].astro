@@ -4,6 +4,7 @@ import Base from "../../layouts/Base.astro";
 import Hero from "../../components/clean/Hero.astro";
 import MetaList from "../../components/clean/MetaList.astro";
 import Gallery from "../../components/clean/Gallery.astro";
+import { imageSize } from "../../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const entries = await getCollection("caseStudies");
@@ -13,6 +14,14 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const { data } = entry;
+
+// Markdown images in public/ get width and height so the page doesn't jump while they load.
+const storyHtml = (entry.rendered?.html ?? "").replace(/<img\s[^>]*>/g, (tag) => {
+	const src = tag.match(/\ssrc="([^"]*)"/)?.[1];
+	const size = src && imageSize(src);
+	const attrs = size ? ` width="${size.width}" height="${size.height}"` : "";
+	return tag.replace(/\s*\/?>$/, `${attrs} loading="lazy">`);
+});
 
 const metaItems = [
 	data.client && { label: "Client", value: data.client },
@@ -28,10 +37,10 @@ const metaItems = [
 			<div class="clean-container">
 				<Hero heading={data.title} subheading={data.subheading} />
 				<MetaList items={metaItems} />
-				{data.cover && <img class="clean-cover" src={data.cover} alt={data.coverAlt ?? ""} />}
+				{data.cover && <img class="clean-cover" src={data.cover} alt={data.coverAlt ?? ""} {...imageSize(data.cover)} />}
 				{data.gallery && <Gallery images={data.gallery} />}
-				<div class="clean-section clean-prose">
-					<Content />
+				<div class="clean-section clean-prose clean-story">
+					<Fragment set:html={storyHtml} />
 				</div>
 			</div>
 		</div>
