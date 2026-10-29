@@ -20,3 +20,10 @@ Consult these guides before working on related tasks:
 - [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Site simplification (in progress)
+
+Work on simplifying this site follows `docs/SIMPLIFY.md` and is tracked in
+issue #4. After every task, update the page review board artifact and bump
+its revision number, as described in the "Page review board" section of that
+file. Never commit screenshots or the screenshot script.

@@ -95,6 +95,53 @@ To pick up a task:
 6. If you get stuck or a step in the issue turns out to be wrong, comment on
    the issue instead of guessing, and update the issue body if the plan
    changes.
+7. **Update the page review board** (next section) and bump its revision
+   number. Every task, no exceptions.
+
+## Page review board
+
+The owner tracks progress visually on a private Claude Artifact:
+
+**https://claude.ai/artifact/XMCbAwR7eUW2V48S3HxvTx**
+
+It holds desktop and phone screenshots of every page, labelled by name and
+URL, plus a **revision number** and a revision history. Screenshots and the
+script that takes them are **never committed to this repo**. They live only
+on the board.
+
+After your PR merges into the integration branch, update the board:
+
+1. **Read it first.** Use the Artifact tool with `action: "read"` and the URL
+   above, and build on the file it returns, not on a copy from memory.
+2. **Build the integration branch** at its new head (`npx astro build`) and
+   serve `dist/` locally, for example with `python3 -m http.server`.
+3. **Retake the screenshots** with a throwaway Playwright script in your
+   scratch directory, never in the repo:
+   - Desktop: 1440×900 viewport, scale 1, **full page**.
+   - Phone: 390×844 viewport, scale 2, `isMobile`, **first screen only**.
+   - Scroll each page top to bottom before capturing so lazy images load.
+   - Save as JPEG, quality ~68, named `shots/<key>-desktop.jpg` and
+     `shots/<key>-phone.jpg`. `<key>` comes from the `groups` array in the
+     board's script; use the same keys so the page picks the shots up.
+4. **Update the page list** in `groups` when a page was dropped, merged or
+   added, and update each page's chip and note to match decisions in #6
+   (for example, change `ask` to `keep` once it's decided).
+5. **Bump the revision.** Add an entry to the **top** of the `revisions`
+   array in the board's script:
+   ```js
+   { rev: 2, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", note: "#7: blog posts converted to markdown." },
+   ```
+   Revisions only go up, one per update, and the note names the issue.
+6. **Publish to the same URL**, passing `url` with the link above, the page
+   file, and the shots in `files`. Set a shot to `null` to remove a dropped
+   page's images.
+7. **Report the number.** End your issue comment with
+   `Review board: Rev <n>`, so the issue history and the board line up.
+
+If your tool can't publish Claude Artifacts (for example GitHub Copilot),
+skip the board and end your issue comment with
+`Review board: not updated`. The next Claude session catches it up in a
+single revision that covers every task since the last one.
 
 ## Conventions
 
