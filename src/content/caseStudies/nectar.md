@@ -11,7 +11,7 @@ cover: "/images/case-studies/nectar/0.png"
 coverAlt: "Nectar case study, cover"
 ---
 
-## Optimizing Nectar's Beekeeping Solutions
+## Optimizing Nectar’s Beekeeping Solutions
 
 Nectar, a Montreal-based startup dedicated to protecting bees, sought to improve their software and design processes. Their goal was to enhance hive management for commercial beekeepers and provide workers with reliable tools to report hive issues in the field.
 
@@ -25,6 +25,6 @@ We helped refine BeeTrack, an app used by beekeepers on low-powered Android devi
 
 ## Sustained Growth with a Scalable Design System
 
-Nectar's design team now operates with a fully scalable design system, empowering them to maintain and expand their platforms. We migrated over 200 design components to Figma, consolidating their assets into a shared structure that fosters collaboration and supports their ongoing growth.
+Nectar’s design team now operates with a fully scalable design system, empowering them to maintain and expand their platforms. We migrated over 200 design components to Figma, consolidating their assets into a shared structure that fosters collaboration and supports their ongoing growth.
 
 ![Nectar case study, image 3](/images/case-studies/nectar/3.png)
