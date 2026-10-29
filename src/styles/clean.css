@@ -389,6 +389,10 @@
 }
 
 /* Images placed in a case study's text run full width, like the cover. */
+.clean-story {
+	margin-top: var(--cp-space-md);
+}
+
 .clean-story p:has(> img) {
 	max-width: none;
 	margin: var(--cp-space-md) 0;
