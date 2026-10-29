@@ -57,6 +57,9 @@ Every task below is a GitHub issue; the issue has the detailed steps and the
 
 | # | Task | Depends on |
 |---|---|---|
+| [#14](https://github.com/pragmaticsstudio/pragmatics-site/issues/14) | Show case study images full width, in order | – |
+| [#15](https://github.com/pragmaticsstudio/pragmatics-site/issues/15) | Compress the case study images (28 MB of PNGs) | – |
+| [#16](https://github.com/pragmaticsstudio/pragmatics-site/issues/16) | Add Petal Health and Common Sense Media case studies | owner's copy, best after #14 |
 | [#5](https://github.com/pragmaticsstudio/pragmatics-site/issues/5) | Add `npm run check` (build + verify links and assets) | – |
 | [#6](https://github.com/pragmaticsstudio/pragmatics-site/issues/6) | **Owner decision:** which legacy pages and videos to keep | – |
 | [#7](https://github.com/pragmaticsstudio/pragmatics-site/issues/7) | Convert the 11 blog posts | #5 |
@@ -67,7 +70,10 @@ Every task below is a GitHub issue; the issue has the detailed steps and the
 | [#12](https://github.com/pragmaticsstudio/pragmatics-site/issues/12) | Remove the legacy rendering path, tighten schemas | #7–#11 |
 | [#13](https://github.com/pragmaticsstudio/pragmatics-site/issues/13) | Authoring guide in the README, CI check, ship to `main` | all |
 
-#7, #8 and #9 touch different folders and can run in parallel.
+#14–#16 come first: the owner asked for them next. Case study images live in
+`public/images/case-studies/<slug>/<n>.png`; `0` is the cover and `1..n`
+appear in that order. #7, #8 and #9 touch different folders and can run in
+parallel.
 
 ## Workflow
 
