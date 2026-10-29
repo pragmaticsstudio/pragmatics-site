@@ -27,6 +27,10 @@ const caseStudySchema = schema.extend({
 	year: z.string().optional(),
 	timeline: z.string().optional(),
 	website: z.string().optional(),
+	// Image 0 from public/images/case-studies/<slug>/: shown on cards and at the top of the page.
+	cover: z.string().optional(),
+	coverAlt: z.string().optional(),
+	// Images 1..n, in the order they appear on the page.
 	gallery: z
 		.array(
 			z.object({

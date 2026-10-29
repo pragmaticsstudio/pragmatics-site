@@ -7,10 +7,19 @@ client: "Ground News"
 year: "2022"
 timeline: "6 months"
 website: "https://ground.news/"
+cover: "/images/case-studies/ground-news/0.png"
+coverAlt: "Ground News project cover"
 gallery:
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/66ad2343454ba6d4dc4f9c07_Screen_Shot_2022-02-13_at_11.14.13_PM.png"
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/659db70ed49d7e939e03b4a1_ground-news-1.png"
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/66ad236ed8b55e342666684d_Group_1731.png"
+  - src: "/images/case-studies/ground-news/1.png"
+    alt: "Ground News project image 1"
+  - src: "/images/case-studies/ground-news/2.png"
+    alt: "Ground News project image 2"
+  - src: "/images/case-studies/ground-news/3.png"
+    alt: "Ground News project image 3"
+  - src: "/images/case-studies/ground-news/4.png"
+    alt: "Ground News project image 4"
+  - src: "/images/case-studies/ground-news/5.png"
+    alt: "Ground News project image 5"
 ---
 
 ## Project context

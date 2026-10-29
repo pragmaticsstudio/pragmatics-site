@@ -58,7 +58,7 @@ Experience personalized art direction that captures the essence of your business
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Magpie Literacy project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ad2494dfc6676f42e3b20d_Magpie%20-%20Tablet%20Mockup_4.png)
+![Magpie Literacy project](/images/case-studies/magpie-literacy/0.png)
 
 </div>
 <div class="clean-project-card__body">
@@ -73,7 +73,7 @@ Teaming up with Magpie Literacy, we're crafting an educational app focused on bo
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Ground News project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba555817bbc2caf724bf36_Ground%20News%20-%20Cover.png)
+![Ground News project](/images/case-studies/ground-news/0.png)
 
 </div>
 <div class="clean-project-card__body">
@@ -88,7 +88,7 @@ Reviving balanced conversations around the news by exposing political bias to ne
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Nectar project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba556813cba6c8e332ee46_Nectar%20-%20Cover.png)
+![Nectar project](/images/case-studies/nectar/0.png)
 
 </div>
 <div class="clean-project-card__body">
@@ -103,7 +103,7 @@ Enabling commercial beekeepers to extract critical insights about their bee colo
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Waverly project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba5573fd35c00c087d0b5a_Waverly%20-%20Cover.png)
+![Waverly project](/images/case-studies/waverly/0.png)
 
 </div>
 <div class="clean-project-card__body">
@@ -118,7 +118,7 @@ Empowering personalized social media with Waverly, we crafted an app that lets u
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Monthly Dignity project](/webflow/images/659c2fa4e3e7e0bb3922119d/66ba5589af9091aadfe572ec_Monthly%20Dignity%20-%20Cover.png)
+![Monthly Dignity project](/images/case-studies/monthly-dignity/0.png)
 
 </div>
 <div class="clean-project-card__body">

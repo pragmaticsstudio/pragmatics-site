@@ -366,6 +366,14 @@
 
 /* --- Gallery --- */
 
+.clean-cover {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 0.75rem;
+	margin-top: var(--cp-space-md);
+}
+
 .clean-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));

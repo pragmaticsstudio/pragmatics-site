@@ -28,6 +28,7 @@ const metaItems = [
 			<div class="clean-container">
 				<Hero heading={data.title} subheading={data.subheading} />
 				<MetaList items={metaItems} />
+				{data.cover && <img class="clean-cover" src={data.cover} alt={data.coverAlt ?? ""} />}
 				{data.gallery && <Gallery images={data.gallery} />}
 				<div class="clean-section clean-prose">
 					<Content />

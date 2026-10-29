@@ -7,10 +7,15 @@ client: "Nectar"
 year: "2022"
 timeline: "3 months"
 website: "https://www.nectar.buzz/"
+cover: "/images/case-studies/nectar/0.png"
+coverAlt: "Nectar project cover"
 gallery:
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e05aa810798ec8d56339d_nectar-1.png"
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e05aa003ea5f343df061e_nectar-2.png"
-  - src: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e062f4eb26f00cde79a82_nectar-title-image-11.png"
+  - src: "/images/case-studies/nectar/1.png"
+    alt: "Nectar project image 1"
+  - src: "/images/case-studies/nectar/2.png"
+    alt: "Nectar project image 2"
+  - src: "/images/case-studies/nectar/3.png"
+    alt: "Nectar project image 3"
 ---
 
 ## Optimizing Nectar's Beekeeping Solutions
