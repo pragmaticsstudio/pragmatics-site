@@ -70,7 +70,9 @@ Every task below is a GitHub issue; the issue has the detailed steps and the
 | [#12](https://github.com/pragmaticsstudio/pragmatics-site/issues/12) | Remove the legacy rendering path, tighten schemas | #7–#11 |
 | [#13](https://github.com/pragmaticsstudio/pragmatics-site/issues/13) | Authoring guide in the README, CI check, ship to `main` | all |
 
-#14–#16 come first: the owner asked for them next. Case study images live in
+Next up: #5, then #14, then #8 and #7. #14 goes right before #8 so converted
+case studies get the full-width image layout. #15 and #16 come after; #16
+needs the owner's copy. Case study images live in
 `public/images/case-studies/<slug>/<n>.png`; `0` is the cover and `1..n`
 appear in that order. #7, #8 and #9 touch different folders and can run in
 parallel.
