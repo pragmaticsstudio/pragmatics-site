@@ -25,5 +25,5 @@ Consult these guides before working on related tasks:
 
 Work on simplifying this site follows `docs/SIMPLIFY.md` and is tracked in
 issue #4. After every task, update the page review board artifact and bump
-its revision number, as described in the "Page review board" section of that
+its revision numbers (one per page, plus the board), as described in the "Page review board" section of that
 file. Never commit screenshots or the screenshot script.

@@ -105,9 +105,10 @@ The owner tracks progress visually on a private Claude Artifact:
 **https://claude.ai/artifact/XMCbAwR7eUW2V48S3HxvTx**
 
 It holds desktop and phone screenshots of every page, labelled by name and
-URL, plus a **revision number** and a revision history. Screenshots and the
-script that takes them are **never committed to this repo**. They live only
-on the board.
+URL. **Every page has its own revision number** and history (Rev 1, Rev 2…),
+and the board as a whole has a "Board rev" with its own history. Screenshots
+and the script that takes them are **never committed to this repo**. They
+live only on the board.
 
 After your PR merges into the integration branch, update the board:
 
@@ -123,20 +124,35 @@ After your PR merges into the integration branch, update the board:
    - Save as JPEG, quality ~68, named `shots/<key>-desktop.jpg` and
      `shots/<key>-phone.jpg`. `<key>` comes from the `groups` array in the
      board's script; use the same keys so the page picks the shots up.
-4. **Update the page list** in `groups` when a page was dropped, merged or
-   added, and update each page's chip and note to match decisions in #6
-   (for example, change `ask` to `keep` once it's decided).
-5. **Bump the revision.** Add an entry to the **top** of the `revisions`
-   array in the board's script:
+4. **Bump each changed page's revision.** In the board's `groups` array, every
+   page has a `history` list, newest first. For each page that changed in your
+   task (its source files or shared layout/CSS changed, or the new screenshot
+   visibly differs from the one on the board), add an entry to the **top** of
+   that page's `history`:
    ```js
-   { rev: 2, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", note: "#7: blog posts converted to markdown." },
+   { rev: 2, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", change: "#7: converted to markdown, new post layout." },
    ```
-   Revisions only go up, one per update, and the note names the issue.
-6. **Publish to the same URL**, passing `url` with the link above, the page
-   file, and the shots in `files`. Set a shot to `null` to remove a dropped
-   page's images.
-7. **Report the number.** End your issue comment with
-   `Review board: Rev <n>`, so the issue history and the board line up.
+   - `rev` is that page's previous number plus one. Each page counts on its
+     own, so the blog post may be at Rev 3 while Contact is still at Rev 1.
+   - `change` names the issue and says in a few words what changed on
+     **that** page.
+   - A page that didn't change keeps its revision and its old screenshots.
+     Don't re-upload them.
+5. **Update the page list** in `groups` when a page was dropped, merged or
+   added. A new page starts at Rev 1. Also update each page's `verdict` and
+   `note` to match decisions in #6. Verdicts are `ctx`, `keep`, `ask`,
+   `drop`, `decided` and `converted`.
+6. **Bump the board revision.** Add an entry to the top of the `revisions`
+   array, naming the issue and listing the pages you bumped:
+   ```js
+   { rev: 3, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", note: "#7: Blog post → Rev 2, Blog index → Rev 2." },
+   ```
+7. **Publish to the same URL**, passing `url` with the link above, the page
+   file, and only the changed shots in `files`. Set a shot to `null` to
+   remove a dropped page's images.
+8. **Report the numbers.** End your issue comment with the board revision
+   and each page you bumped, for example
+   `Review board: Rev 3 (Blog post Rev 2, Blog index Rev 2)`.
 
 If your tool can't publish Claude Artifacts (for example GitHub Copilot),
 skip the board and end your issue comment with
