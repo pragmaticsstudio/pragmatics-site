@@ -1,4 +1,4 @@
-// Reads the pixel size of a PNG, JPEG or WebP under public/ so <img> tags can
+// Reads the pixel size of a PNG, JPEG, GIF or WebP under public/ so <img> tags can
 // carry width and height and the page doesn't jump while images load.
 import { openSync, readSync, closeSync, existsSync } from "node:fs";
 import { join } from "node:path";
@@ -15,6 +15,9 @@ export function imageSize(src) {
 		readSync(fd, head, 0, 32, 0);
 		if (head.toString("latin1", 1, 4) === "PNG") {
 			return { width: head.readUInt32BE(16), height: head.readUInt32BE(20) };
+		}
+		if (head.toString("latin1", 0, 3) === "GIF") {
+			return { width: head.readUInt16LE(6), height: head.readUInt16LE(8) };
 		}
 		if (head.toString("latin1", 0, 4) === "RIFF" && head.toString("latin1", 8, 12) === "WEBP") {
 			const kind = head.toString("latin1", 12, 16);
@@ -42,4 +45,14 @@ export function imageSize(src) {
 		closeSync(fd);
 	}
 	return undefined;
+}
+
+// Adds width, height and lazy loading to the <img> tags in rendered markdown HTML.
+export function addImageSizes(html) {
+	return html.replace(/<img\s[^>]*>/g, (tag) => {
+		const src = tag.match(/\ssrc="([^"]*)"/)?.[1];
+		const size = src && imageSize(src);
+		const attrs = size ? ` width="${size.width}" height="${size.height}"` : "";
+		return tag.replace(/\s*\/?>$/, `${attrs} loading="lazy">`);
+	});
 }

@@ -1,6 +1,9 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import Hero from "../../components/clean/Hero.astro";
+import MetaList from "../../components/clean/MetaList.astro";
+import { imageSize, addImageSizes } from "../../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const entries = await getCollection("posts");
@@ -8,9 +11,22 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { data } = entry;
+const html = addImageSizes(entry.rendered?.html ?? "");
 ---
 
-<Base title={entry.data.title} description={entry.data.description}>
-	<Content />
+<Base title={data.title} description={data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			<div class="clean-prose">
+				<p><a href="/blog/">← All writing</a></p>
+			</div>
+			<Hero heading={data.title} subheading={data.description} />
+			{data.author && <MetaList items={[{ label: "Author", value: data.author }]} />}
+			{data.image && <img class="clean-cover" src={data.image} alt={data.imageAlt ?? ""} {...imageSize(data.image)} />}
+			<div class="clean-section clean-prose clean-story">
+				<Fragment set:html={html} />
+			</div>
+		</div>
+	</div>
 </Base>

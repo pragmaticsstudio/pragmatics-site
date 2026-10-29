@@ -46,9 +46,17 @@ const caseStudies = defineCollection({
 	schema: caseStudySchema,
 });
 
+const postSchema = schema.extend({
+	// Only set when the post text gives a real publish date.
+	date: z.coerce.date().optional(),
+	author: z.string().optional(),
+	image: z.string().optional(),
+	imageAlt: z.string().optional(),
+});
+
 const posts = defineCollection({
 	loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
-	schema,
+	schema: postSchema,
 });
 
 const pages = defineCollection({
