@@ -67,6 +67,7 @@ hero:
 <img src="/images/pages/studio/charlie-portrait.jpg" alt="Charlie Gedeon" width="860" height="849" loading="lazy"/>
 <h3>Charlie Gedeon</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
+<p><a href="https://charliegedeon.com">charliegedeon.com</a></p>
 </article>
 <article>
 <img src="/images/pages/studio/portrait-allan.png" alt="Allan Macdonald" width="512" height="512" loading="lazy"/>
