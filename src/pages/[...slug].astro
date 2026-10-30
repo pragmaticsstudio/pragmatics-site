@@ -2,6 +2,7 @@
 import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Hero from "../components/clean/Hero.astro";
+import { addImageSizes } from "../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const pages = await getCollection("pages");
@@ -12,6 +13,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const html = addImageSizes(entry.rendered?.html ?? "");
 const { data } = entry;
 ---
 
@@ -21,7 +23,7 @@ const { data } = entry;
 			<div class="clean-container">
 				{data.hero && <Hero {...data.hero} />}
 				<div class="clean-prose">
-					<Content />
+					<Fragment set:html={html} />
 				</div>
 			</div>
 		</div>
