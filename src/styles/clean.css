@@ -272,19 +272,28 @@
 }
 
 .site-logo {
-	display: block;
-	line-height: 0;
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+	text-decoration: none;
 }
 
 .site-logo img {
 	display: block;
 	width: auto;
-	height: 2rem;
+	height: 1.5rem;
+}
+
+.site-logo span {
+	font-size: 1rem;
+	font-weight: 700;
+	text-transform: lowercase;
+	letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
 	.site-logo img {
-		height: 2.5rem;
+		height: 1.75rem;
 	}
 }
 
