@@ -1,0 +1,20 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/clean/Hero.astro";
+import WorkRows from "../../components/clean/WorkRows.astro";
+import { getPage, getWork } from "../../lib/content";
+
+const page = await getPage("case-studies");
+const work = await getWork();
+---
+
+<Base title={page.data.title} description={page.data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			{page.data.hero && <Hero {...page.data.hero} />}
+			<div class="clean-prose">
+				<WorkRows items={work} />
+			</div>
+		</div>
+	</div>
+</Base>
