@@ -8,7 +8,7 @@ timeline: "4 months"
 website: "https://colloghcares.com/"
 cover: "/images/case-studies/collogh-cares/0.png"
 coverAlt: "ColloghCares case study, cover"
-order: 9
+order: 10
 tags: ["Product Design"]
 ---
 

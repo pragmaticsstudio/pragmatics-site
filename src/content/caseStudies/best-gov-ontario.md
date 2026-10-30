@@ -6,7 +6,7 @@ client: "Government of Ontario"
 year: "2023"
 timeline: "1 year"
 website: "https://www.ontario.ca/"
-order: 3
+order: 4
 tags: ["Product Design", "Content"]
 cardImage: "/images/case-studies/best-gov-ontario/1.webp"
 ---
