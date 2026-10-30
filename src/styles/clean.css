@@ -279,12 +279,12 @@
 .site-logo img {
 	display: block;
 	width: auto;
-	height: 2.75rem;
+	height: 2rem;
 }
 
 @media (min-width: 768px) {
 	.site-logo img {
-		height: 3.25rem;
+		height: 2.5rem;
 	}
 }
 
