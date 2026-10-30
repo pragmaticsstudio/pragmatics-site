@@ -19,6 +19,7 @@ const cards = [feature, ...rest].filter(Boolean).map(card);
 	<a class="clean-project__media" href={`/case-studies/${cards[0].slug}/`}><img src={cards[0].src} alt={cards[0].alt} loading="lazy" {...cards[0].size} /></a>
 	<h3 class="clean-project__title"><a class="clean-link" href={`/case-studies/${cards[0].slug}/`}>{cards[0].title}</a></h3>
 	<p><a class="clean-link" href={`/case-studies/${cards[0].slug}/`}>{cards[0].text}</a></p>
+	<p class="clean-project__more"><a href={`/case-studies/${cards[0].slug}/`}>Read More →</a></p>
 </article>
 {cards.length > 1 && (
 	<div class="clean-project-grid">
@@ -27,6 +28,7 @@ const cards = [feature, ...rest].filter(Boolean).map(card);
 				<a class="clean-project__media" href={`/case-studies/${c.slug}/`}><img src={c.src} alt={c.alt} loading="lazy" {...c.size} /></a>
 				<h3 class="clean-project__title"><a class="clean-link" href={`/case-studies/${c.slug}/`}>{c.title}</a></h3>
 				<p><a class="clean-link" href={`/case-studies/${c.slug}/`}>{c.text}</a></p>
+				<p class="clean-project__more"><a href={`/case-studies/${c.slug}/`}>Read More →</a></p>
 			</article>
 		))}
 	</div>

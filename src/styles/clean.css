@@ -494,6 +494,10 @@
 	margin: 0;
 }
 
+.clean-prose .clean-project p.clean-project__more {
+	margin-top: 0.5rem;
+}
+
 .clean-project-grid {
 	display: grid;
 	grid-template-columns: 1fr;
