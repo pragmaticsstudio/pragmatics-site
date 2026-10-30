@@ -29,15 +29,60 @@ We partnered on service and interface improvements to increase delivery speed an
 <div class="clean-project-card">
 <div class="clean-project-card__media">
 
-![Ground News project](/images/case-studies/ground-news/0.png)
+![Government of Ontario project](/images/case-studies/best-gov-ontario/1.webp)
 
 </div>
 <div class="clean-project-card__body">
 
-### Breaking echo chambers for better media literacy
-We helped Ground News evolve key mobile patterns into a clearer and faster web experience.
+### Supporting Ontario's Small Business with Digital Resources for Entrepreneurs
+The Government of Ontario needed help to develop their resources for entrepreneurs, and enhance accessibility and engagement.
 
-<a href="/case-studies/ground-news/" class="clean-project-card__view">View Project →</a>
+<a href="/case-studies/best-gov-ontario/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
+
+![Reliant project](/images/case-studies/reliant/0.png)
+
+</div>
+<div class="clean-project-card__body">
+
+### Untangling Complexity with a Brand for AI-Driven Clarity
+We enhanced Reliant AI's brand identity, aligning it with their mission to democratize complex AI-driven data analysis for the life sciences sector
+
+<a href="/case-studies/reliant/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
+
+![Monthly Dignity project](/images/case-studies/monthly-dignity/0.png)
+
+</div>
+<div class="clean-project-card__body">
+
+### Building a Website to Support Menstrual Health and Equity
+We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal
+
+<a href="/case-studies/monthly-dignity/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
+
+![Waverly project](/images/case-studies/waverly/0.png)
+
+</div>
+<div class="clean-project-card__body">
+
+### Redefining Social Spaces to Foster Healthier Conversations
+Empowering personalized social media with Waverly, we crafted an app that lets users shape their content experience using conversational AI, promoting focused engagement and meaningful digital interactions.
+
+<a href="/case-studies/waverly/" class="clean-project-card__view">View Project →</a>
 
 </div>
 </div>
@@ -53,6 +98,36 @@ We helped Ground News evolve key mobile patterns into a clearer and faster web e
 We collaborated with Magpie Literacy to improve product direction and user outcomes for young learners.
 
 <a href="/case-studies/magpie-literacy/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
+
+![Ground News project](/images/case-studies/ground-news/0.png)
+
+</div>
+<div class="clean-project-card__body">
+
+### Breaking echo chambers for better media literacy
+We helped Ground News evolve key mobile patterns into a clearer and faster web experience.
+
+<a href="/case-studies/ground-news/" class="clean-project-card__view">View Project →</a>
+
+</div>
+</div>
+<div class="clean-project-card">
+<div class="clean-project-card__media">
+
+![ColloghCares project](/images/case-studies/collogh-cares/0.png)
+
+</div>
+<div class="clean-project-card__body">
+
+### Transforming Kidney Care with a Digital Coach for Better Health
+Increasing medical adherence rates of underserved chronic kidney design patients by nudging them into healthier behaviours
+
+<a href="/case-studies/collogh-cares/" class="clean-project-card__view">View Project →</a>
 
 </div>
 </div>
