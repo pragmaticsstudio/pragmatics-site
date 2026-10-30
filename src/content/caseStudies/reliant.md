@@ -5,7 +5,7 @@ subheading: "We enhanced Reliant AI's brand identity, aligning it with their mis
 client: "Reliant"
 cover: "/images/case-studies/reliant/0.png"
 coverAlt: "Reliant case study, cover"
-order: 4
+order: 5
 tags: ["Branding", "Content", "Design"]
 ---
 

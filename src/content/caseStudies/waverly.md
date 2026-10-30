@@ -8,7 +8,7 @@ timeline: "1 year"
 website: "https://waverly.social/"
 cover: "/images/case-studies/waverly/0.png"
 coverAlt: "Waverly case study, cover"
-order: 6
+order: 7
 featured: true
 featuredOrder: 4
 tags: ["Product Design", "Branding", "Design"]

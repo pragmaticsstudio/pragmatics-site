@@ -8,7 +8,7 @@ timeline: "6 Months"
 website: "https://ground.news/"
 cover: "/images/case-studies/ground-news/0.png"
 coverAlt: "Ground News case study, cover"
-order: 8
+order: 9
 featured: true
 featuredOrder: 2
 tags: ["Product Design", "Branding"]
