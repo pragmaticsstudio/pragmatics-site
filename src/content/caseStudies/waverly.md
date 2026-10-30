@@ -22,13 +22,15 @@ Waverly’s ask for us was a bit unconventional. Rather than have us tackle the 
 
 Our objective? Challenge their thinking and provide a fresh perspective.
 
+![Waverly case study, image 1](/images/case-studies/waverly/1.png)
+
 ## The vision
 
 Change the paradigm of social networks by giving users visibility into how the algorithms work, and allow them to customize them for their own digital communities so that discussions can be deeper and more empathetic.
 
 Together with Waverly, we set out to rethink what it means to build online communities and collaborate with AI to create healthier conversation.
 
-![Waverly case study, image 1](/images/case-studies/waverly/1.png)
+![Waverly case study, image 2](/images/case-studies/waverly/2.png)
 
 ### Giving everyone the keys to their own social network
 
@@ -36,17 +38,15 @@ Reimagined interfaces for creating online groups, moderating them, and authoring
 
 One of the recurring themes we learned from research was how hard it is to energize online communities with relevant content and keep discussions aligned to the guidelines. This led us to two innovations we wanted to test.
 
-![Waverly case study, image 2](/images/case-studies/waverly/2.png)
-
 ### AI recommendations that require human curation
 
 Conversations can stay alive and relevant, while keeping control in the hands of the community’s members. make it easier to design a beautiful deck while still giving people some sense of control.
 
+![Waverly case study, image 3](/images/case-studies/waverly/3.png)
+
 ### Live feedback on a post to increase transparency in moderation
 
 Often posts on communities like Reddit can get rejected despite having a lot of thought poured into them. This could be a misunderstanding on the poster, or misinterpretation from the moderator. In Waverly we added live feedback to the
-
-![Waverly case study, image 3](/images/case-studies/waverly/3.png)
 
 ## Launching a big idea
 
