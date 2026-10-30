@@ -21,9 +21,15 @@ Consult these guides before working on related tasks:
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
 
-## Site simplification (in progress)
+## Site simplification (done)
 
-Work on simplifying this site follows `docs/SIMPLIFY.md` and is tracked in
-issue #4. After every task, update the page review board artifact and bump
-its revision numbers (one per page, plus the board), as described in the "Page review board" section of that
-file. Never commit screenshots or the screenshot script.
+The site was simplified into plain markdown (tracking issue #4, plan in `docs/SIMPLIFY.md`).
+The README is the authoring guide. Rules that still apply:
+
+- Keep the original wording when moving content; never invent client facts, dates or quotes.
+- No forms, no client JavaScript, no new dependencies.
+- The look is the live site's: bright cream frame and rules, regular-weight headings, no filled
+  cards, links never underlined. Compare visual changes with the live site at 375px and 1440px.
+- Run `npm run check` before every push; it must report 0 broken references.
+- Never commit screenshots or the screenshot script.
+- If the page review board is still in use, update it after each task as `docs/SIMPLIFY.md` describes.

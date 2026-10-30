@@ -1,5 +1,7 @@
 # Simplifying the Pragmatics site
 
+> **Status: complete (Oct 2026).** Every task below shipped on `copilot/cleanupmobile-markdown` and went to `main` in one pull request. This file is kept as a record of the plan and the rules. Day-to-day instructions are in the [README](../README.md).
+
 This is the working plan for turning the Webflow export into a simple static
 site that can live in this repo for years without upkeep. It is written so any
 agent or person can pick up the next task cold.
