@@ -7,6 +7,9 @@ client: "Government of Ontario"
 year: "2023"
 timeline: "1 year"
 website: "https://www.ontario.ca/"
+order: 2
+tags: ["Product Design", "Content"]
+cardImage: "/images/case-studies/best-gov-ontario/1.webp"
 ---
 
 We collaborated with Studio Wé to help the Government of Ontario enhance their online resources for small businesses. Entrepreneurs are often under a lot of pressure, so it’s critical to understand their needs deeply and deliver solutions that span both digital and physical services.

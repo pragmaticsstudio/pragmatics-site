@@ -3,6 +3,8 @@ title: "Embracing the AI Mindshift: From Google to ChatGPT"
 description: "Exploring the evolution of information access, decision-making, and society's acceptance of more authoritative answers"
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/659c599fdc27a3231042b2fa_Capture-2024-01-08-152222.png"
+order: 8
+tag: "Branding"
 ---
 
 ## Exploring the evolution of information access, decision-making, and society's acceptance of more authoritative answers

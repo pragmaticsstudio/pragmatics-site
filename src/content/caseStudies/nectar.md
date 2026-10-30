@@ -9,6 +9,10 @@ timeline: "3 months"
 website: "https://www.nectar.buzz/"
 cover: "/images/case-studies/nectar/0.png"
 coverAlt: "Nectar case study, cover"
+order: 9
+featured: true
+featuredOrder: 3
+tags: ["Product Design"]
 ---
 
 ## Optimizing Nectar’s Beekeeping Solutions

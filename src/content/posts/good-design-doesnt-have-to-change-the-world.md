@@ -3,6 +3,7 @@ title: "Good design doesn’t have to change the world"
 description: "How designers can focus on individuals instead of systems to feel the impact of their work"
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e0bd10792140d75c18ec5_blog-2.png"
+order: 10
 ---
 
 ## Good design doesn’t have to change the world

@@ -6,6 +6,8 @@ clean: true
 client: "Reliant"
 cover: "/images/case-studies/reliant/0.png"
 coverAlt: "Reliant case study, cover"
+order: 3
+tags: ["Branding", "Content", "Design"]
 ---
 
 ## Introduction

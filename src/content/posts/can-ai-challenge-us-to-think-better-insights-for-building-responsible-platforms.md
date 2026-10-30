@@ -2,6 +2,8 @@
 title: "Can AI Challenge Us to Think Better? Insights for Building Responsible Platforms"
 description: "Explore how AI can challenge misinformation, promote critical thinking, and drive more informed, engaged audiences."
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/672d2adef6ce1e129f505e83_AI%20that%20challenges.png"
+order: 3
+tag: "UX"
 ---
 
 For many users, the experience with ChatGPT is quite accommodating. You throw in a half-formed question or poorly phrased idea, and the machine responds with passionate positivity: “Absolutely! Let’s explore…”. It doesn’t correct you, doesn’t push back, and rarely makes you feel uncomfortable. In fact, the chatbot seems eager to please, no matter how ill-informed your input might be. This accommodating behavior led us to consider an interesting question: does ChatGPT challenge us?

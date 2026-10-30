@@ -3,6 +3,8 @@ title: "The UX Trap: How Even Savvy VCs Can Miss Critical User Experience Flaws"
 description: "VCs can miss essential UX issues masked by sleek designs. Learn how to ask the right questions and dig deeper to spot hidden risks in startup investments."
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/66fdbb202c918aa3c1a0a1b8_VC%20UX%20Blindspot.png"
+order: 6
+tag: "UX"
 ---
 
 In the world of venture capital, being able to spot true potential is essential. Yet, even the savviest investors can fall into a common trap: being misled by a startup’s sleek, modern design while overlooking deeper issues with user experience (UX). This trap is particularly deceptive because it plays into the assumption that good design equals good usability. But more often than not, the real risks lurk beneath the surface, in the subtle details of how users interact with the product.

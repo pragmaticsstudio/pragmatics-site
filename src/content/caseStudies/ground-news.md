@@ -9,6 +9,10 @@ timeline: "6 Months"
 website: "https://ground.news/"
 cover: "/images/case-studies/ground-news/0.png"
 coverAlt: "Ground News case study, cover"
+order: 7
+featured: true
+featuredOrder: 2
+tags: ["Product Design", "Branding"]
 ---
 
 Ground News reached out to Pragmatics to help transition the best features from their mobile app to an all-new web experience.We worked closely with their team to release several iterations of the web app, and over time helped them develop a variety of tools their users loved including a browser extension, election trackers, and the

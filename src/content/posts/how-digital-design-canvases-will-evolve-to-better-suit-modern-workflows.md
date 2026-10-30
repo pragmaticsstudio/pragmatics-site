@@ -3,6 +3,7 @@ title: "How digital design canvases will evolve to better suit modern workflows"
 description: "The importance of information layers for design workspaces and the future of productivity in teams"
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e0c471904782bf4b8991a_figdone-status.gif"
+order: 11
 ---
 
 ## The importance of information layers for design workspaces and the future of productivity in teams

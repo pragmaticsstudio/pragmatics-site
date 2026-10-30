@@ -4,6 +4,9 @@ description: "Partnering with HydroQuebec, we developed a design system to unify
 subheading: "Partnering with HydroQuebec, we developed a design system to unify application development and foster innovation among their internal teams, setting the stage for a streamlined and standardized approach across the organization."
 clean: true
 client: "Hydro Quebec"
+order: 1
+tags: ["Product Design"]
+cardImage: "/images/case-studies/hydro-quebec/1.webp"
 ---
 
 ## Case

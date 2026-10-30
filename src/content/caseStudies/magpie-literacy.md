@@ -9,6 +9,10 @@ timeline: "2 years"
 website: "https://www.magpie.org/"
 cover: "/images/case-studies/magpie-literacy/0.png"
 coverAlt: "Magpie Literacy case study, cover"
+order: 6
+featured: true
+featuredOrder: 1
+tags: ["Branding", "Product Design", "Design"]
 ---
 
 ## Introduction

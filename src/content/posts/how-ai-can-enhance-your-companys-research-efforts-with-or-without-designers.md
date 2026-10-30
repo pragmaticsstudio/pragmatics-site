@@ -2,6 +2,8 @@
 title: "How AI Can Enhance Your Company’s Research Efforts (With or Without Designers)"
 description: "Explore how AI tools like FigJam, and Dovetail can help companies conduct UX research without needing a design team, balancing automation with human insight to create better products."
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/67210516648fb35dd6235c25_AI%20in%20UX%20Research%20Article.png"
+order: 5
+tag: "UX"
 ---
 
 UX research is crucial for any company developing a product, but what if you don’t have a dedicated design team? AI is stepping in to support and amplify research efforts, making user research more accessible and efficient for all teams, regardless of size or expertise. Importantly, these tools aren’t about replacing designers but about enhancing what they can do and bridging gaps where resources may be limited.

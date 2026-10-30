@@ -3,6 +3,7 @@ title: "Using Assessment Questions to Improve the Effectiveness of the 10 Usabil
 description: "Optimize your usability evaluations and design more user-friendly products with this resource on essential assessment questions for the 10 usability heuristics."
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e0b3b668aa87e929f693e_blog-post.png"
+order: 9
 ---
 
 ### Optimize your usability evaluations and design more user-friendly products with this resource on essential assessment questions for the 10 usability heuristics.

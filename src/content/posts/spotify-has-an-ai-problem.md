@@ -3,6 +3,9 @@ title: "Spotify has an AI problem"
 description: "Beneath Spotify’s algorithmic charm lies a growing problem: a platform flooded with songs made by no one."
 author: "Allan Macdonald"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/6927c537652b692f35d08b02_AI-music-image%20Large.jpeg"
+order: 1
+tag: "UX"
+featured: true
 ---
 
 Music has always been important in my household. I have fond and vivid memories of mornings starting off the day with my dad playing Ottis Redding’s Sitting on the Dock of the Bay on the record player. Music was how we connected. So over the years, he’d send me Spotify recommendations, mostly stuck in the ’60s, oftentimes some repetitive blues songs, I’d happily listen, grateful for that small bridge between generations and to connect with my dad.

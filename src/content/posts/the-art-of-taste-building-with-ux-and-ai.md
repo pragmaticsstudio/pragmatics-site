@@ -3,6 +3,9 @@ title: "The Art of Taste-Building with UX and AI"
 description: "How evolving technologies are reshaping the relationship between personalization, exploration, and user experience."
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/67464b1c727869dcce995d02_AI,%20UX,%20and%20the%20Art%20of%20Taste-Building.png"
+order: 2
+tag: "UX"
+featured: true
 ---
 
 In an age where algorithms increasingly control what we see, hear, and engage with, we’re reflecting on one big question: how do we balance personalization with the human desire for exploration and connection? Our reflection goes beyond convenience. We believe the world would be more beautiful if we craft meaningful experiences that empower users to grow and discover. Particularly in music, an art that lends itself to taste-makers and social recommendations, we’ve noticed that we might have steered too far away from making clear moments of human connection.

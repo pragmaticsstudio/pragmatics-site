@@ -3,6 +3,8 @@ title: "Unlikely UX Lessons for Product Managers and Growth, Inspired by Game De
 description: "How adaptive storytelling, emotional interactions, effective onboarding, and contextual UI can elevate your product's user experience."
 author: "Allan Macdonald"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/6723a5f593038d25416462f9_Unlikely%20Game%20Lessons.png"
+order: 4
+tag: "UX"
 ---
 
 When we talk about learning from video games, the immediate association is often gamification. Add a points system, throw in some rewards, and you've got user engagement, right? But as a product manager, designer, or growth marketer you know engagement goes beyond just keeping users busy.

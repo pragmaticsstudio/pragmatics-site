@@ -3,6 +3,8 @@ title: "How AI and Metacognition are Shaping UX Research"
 description: "Advances in artificial intelligence are poised to deepen our understanding through metacognitive reflection. This piece discusses how AI not only accelerates the research process by identifying patterns and clustering insights but also prompts deeper thought on overlooked or underappreciated findings."
 author: "Charlie Gedeon"
 image: "/webflow/images/659c2fa4e3e7e0bb3922119d/66eb919729f5ad0e923f2ac5_Metacognition%20Designer.png"
+order: 7
+tag: "UX"
 ---
 
 One of the best parts of building experiments in public is how the ideas can evolve by others. When we recently shared a video of how AI can help [metacognition in the classroom](https://youtu.be/Sj2BdGVOriQ), someone reached out to us to say that this might also be relevant in UX research.

@@ -9,6 +9,8 @@ timeline: "4 months"
 website: "https://colloghcares.com/"
 cover: "/images/case-studies/collogh-cares/0.png"
 coverAlt: "ColloghCares case study, cover"
+order: 8
+tags: ["Product Design"]
 ---
 
 Chronic kidney disease (CKD) is a long-term condition where the kidneys don't work as well as they should. It's a common condition often associated with getting older. It can affect anyone, but it's more common in people who are black or of south Asian origin (Source NHS). In fact, when we ColloghCares, we were shocked to discover that, according to the, more than 1 in 7 US adults, or 37 million people, are estimated to have CKD.
