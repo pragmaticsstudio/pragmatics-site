@@ -1,8 +1,9 @@
 ---
 title: "Common Sense Media"
-description: "We started with a shared visual language: a design system for the new Youth AI Safety Institute, now becoming the foundation for a full redesign of Common Sense's properties."
-subheading: "We started with a shared visual language: a design system for the new Youth AI Safety Institute, now becoming the foundation for a full redesign of Common Sense's properties."
+description: "Extending a trusted family media brand into the age of AI."
+subheading: "Extending a trusted family media brand into the age of AI."
 client: "Common Sense Media"
+year: "2026"
 cover: "/images/case-studies/common-sense-media/0.png"
 coverAlt: "Common Sense Media case study, cover"
 order: 1
