@@ -724,6 +724,10 @@
 	}
 }
 
+.clean-prose .clean-work-row:first-child {
+	border-top: 0;
+}
+
 .clean-work-row__body {
 	display: flex;
 	flex-direction: column;

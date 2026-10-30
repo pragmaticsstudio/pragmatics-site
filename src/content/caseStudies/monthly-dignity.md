@@ -5,7 +5,7 @@ subheading: "We revitalized Monthly Dignity's website to reflect their vibrant p
 client: "Monthly Dignity"
 cover: "/images/case-studies/monthly-dignity/0.png"
 coverAlt: "Monthly Dignity case study, cover"
-order: 4
+order: 5
 featured: true
 featuredOrder: 5
 tags: ["Design", "Branding", "Content"]

@@ -3,7 +3,7 @@ title: "Accelerating Hydro Quebec’s Innovation with Design Ops and Design Syst
 description: "Partnering with HydroQuebec, we developed a design system to unify application development and foster innovation among their internal teams, setting the stage for a streamlined and standardized approach across the organization."
 subheading: "Partnering with HydroQuebec, we developed a design system to unify application development and foster innovation among their internal teams, setting the stage for a streamlined and standardized approach across the organization."
 client: "Hydro Quebec"
-order: 1
+order: 2
 tags: ["Product Design"]
 cardImage: "/images/case-studies/hydro-quebec/1.webp"
 ---
