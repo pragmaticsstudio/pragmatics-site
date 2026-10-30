@@ -1,26 +1,30 @@
 ---
 title: "Petal Health"
-description: "Petal Health came to Pragmatics as one of Canada’s top providers for medical workforce scheduling systems at a pivotal point in their business."
+description: "Petal Health is one of Canada’s top providers of medical workforce scheduling systems, and came to us at a pivotal point in their business."
 client: "Petal Health"
 cover: "/images/case-studies/petal-health/0.png"
 coverAlt: "Petal Health case study, cover"
 order: 2
 ---
 
-## Challenge
+## Introduction
 
-Petal Health came to Pragmatics as one of Canada’s top providers for medical workforce scheduling systems at a pivotal point in their business. They had added a patient hub and a billing product to their portfolio, and had acquired several local providers of these services. Their site had become a spiderweb of subdomains, product pages, and siloed brands.
+Petal Health is one of Canada’s top providers of medical workforce scheduling systems. When they came to us, they were at a pivotal point in their business. They had added a patient hub and a billing product to their portfolio, and had acquired several local providers of these services. Along the way, their site had become a spiderweb of subdomains, product pages, and siloed brands.
 
-Like many companies with big ambitions, they had arrived at their destination and needed a website, information architecture, and brand to carry that ambition without alienating all the people who rely on them everyday.
+## A destination that needed a story
+
+Like many companies with big ambitions, Petal had arrived at their destination. They needed a website, information architecture, and brand that could carry that ambition without alienating the people who rely on them every day.
 
 ![Petal Health case study, image 1](/images/case-studies/petal-health/1.png)
 
-## Outcome
+## Bridging the silos
 
-Through our studio’s specially crafted exercises that bring together stakeholders and provide them with “objects” to think with, we were able to bridge the silos in the brands. Stakeholders from every unit in the company expressed their needs which were combined using our collaborative process into powerful storytelling devices to be used across media as well as a productive rollout plan to rebrand all of Petal Health’s sub-brands over 2 years.
+We brought stakeholders together through exercises crafted by our studio, giving them “objects” to think with. People from every unit in the company voiced their needs, and our collaborative process combined them into powerful storytelling devices that work across media.
 
 ![Petal Health case study, image 2](/images/case-studies/petal-health/2.png)
 
-In September, 2025 Petal’s CEO uses this story to announce their plan to tackle Canada’s healthcare system crisis.
+## A two-year rollout
+
+We paired those storytelling devices with a rollout plan to rebrand all of Petal Health’s sub-brands over two years. In September 2025, Petal’s CEO used this story to announce their plan to tackle Canada’s healthcare system crisis.
 
 ![Petal Health case study, image 3](/images/case-studies/petal-health/3.png)
