@@ -1,9 +1,19 @@
-<footer class="footer">
-	<div class="page-padding">
-		<div class="container-xxlarge">
-			<div class="footer-inner">
-				<p>Pragmatics Studio</p>
-			</div>
-		</div>
+---
+const year = new Date().getFullYear();
+
+const socialLinks = [
+	{ label: "YouTube", href: "https://www.youtube.com/@pragmaticsstudio" },
+	{ label: "LinkedIn", href: "https://www.linkedin.com/company/pragmatics-studio" },
+];
+---
+
+<footer class="site-footer">
+	<div class="site-footer__inner">
+		<p>&copy; {year} Pragmatics Studio</p>
+		<ul class="site-footer__links">
+			{socialLinks.map(({ label, href }) => (
+				<li><a href={href} target="_blank" rel="noopener noreferrer">{label}</a></li>
+			))}
+		</ul>
 	</div>
 </footer>

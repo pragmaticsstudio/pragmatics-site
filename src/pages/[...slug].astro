@@ -1,31 +1,30 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import Base from "../layouts/Base.astro";
 import Hero from "../components/clean/Hero.astro";
+import { addImageSizes } from "../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const pages = await getCollection("pages");
+	// These routes have their own page files that build their lists from the collections.
+	const own = new Set(["", "blog", "case-studies", "services"]);
 	return pages
-		.filter((entry) => entry.data.route !== "")
+		.filter((entry) => !own.has(entry.data.route))
 		.map((entry) => ({ params: { slug: entry.data.route }, props: { entry } }));
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
 const { data } = entry;
+const html = addImageSizes(entry.rendered?.html ?? "");
 ---
 
-<Base title={entry.data.title} description={entry.data.description}>
-	{data.clean ? (
-		<div class="clean-page">
-			<div class="clean-container">
-				{data.hero && <Hero {...data.hero} />}
-				<div class="clean-prose">
-					<Content />
-				</div>
+<Base title={data.title} description={data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			{data.hero && <Hero {...data.hero} />}
+			<div class="clean-prose">
+				<Fragment set:html={html} />
 			</div>
 		</div>
-	) : (
-		<Content />
-	)}
+	</div>
 </Base>
