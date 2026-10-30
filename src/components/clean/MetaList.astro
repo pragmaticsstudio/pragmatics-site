@@ -7,12 +7,13 @@ interface Item {
 
 interface Props {
 	items: Item[];
+	side?: boolean;
 }
 
-const { items } = Astro.props;
+const { items, side = false } = Astro.props;
 ---
 
-<ul class="clean-meta-list">
+<ul class:list={["clean-meta-list", { "clean-meta-list--side": side }]}>
 	{items.map((item) => (
 		<li class="clean-meta-list__item">
 			<span class="clean-meta-list__label">{item.label}</span>
