@@ -3,7 +3,7 @@ title: "Untangling Complexity with a Brand for AI-Driven Clarity"
 description: "We enhanced Reliant AI's brand identity, aligning it with their mission to democratize complex AI-driven data analysis for the life sciences sector"
 subheading: "We enhanced Reliant AI's brand identity, aligning it with their mission to democratize complex AI-driven data analysis for the life sciences sector"
 client: "Reliant"
-cover: "/images/case-studies/reliant/0.png"
+cover: "/images/case-studies/reliant/0.webp"
 coverAlt: "Reliant case study, cover"
 order: 5
 tags: ["Branding", "Content", "Design"]
@@ -29,10 +29,10 @@ To complement the visual identity, we selected a modern, clean typeface that enh
 
 As an emerging player in the space, we had to be mindful of how much branding is necessary for Reliant’s needs. We created a brandbook that has informed several design elements by other designers and marketers. This includes brochures, presentations, and motion graphics. Each piece was informed by our branding work and reinforces the brand’s key messages and visual identity.
 
-![Reliant case study, image 2](/images/case-studies/reliant/2.png)
+![Reliant case study, image 2](/images/case-studies/reliant/2.webp)
 
 By developing a light but strong brand identity for Reliant, we helped them position themselves as innovators in the AI and machine learning space. The new branding not only reflects Reliant’s technological prowess but also ensures that their innovative solutions are accessible and appealing to an audience careful about their scientific integrity.
 
 We are excited to see how Reliant’s new brand identity will support their growth and success in the coming years.
 
-![Reliant case study, image 3](/images/case-studies/reliant/3.png)
+![Reliant case study, image 3](/images/case-studies/reliant/3.webp)

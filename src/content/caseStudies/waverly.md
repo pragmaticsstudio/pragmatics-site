@@ -6,7 +6,7 @@ client: "Waverly"
 year: "2023"
 timeline: "1 year"
 website: "https://waverly.social/"
-cover: "/images/case-studies/waverly/0.png"
+cover: "/images/case-studies/waverly/0.webp"
 coverAlt: "Waverly case study, cover"
 order: 7
 featured: true
@@ -30,7 +30,7 @@ Change the paradigm of social networks by giving users visibility into how the a
 
 Together with Waverly, we set out to rethink what it means to build online communities and collaborate with AI to create healthier conversation.
 
-![Waverly case study, image 2](/images/case-studies/waverly/2.png)
+![Waverly case study, image 2](/images/case-studies/waverly/2.webp)
 
 ### Giving everyone the keys to their own social network
 
@@ -42,7 +42,7 @@ One of the recurring themes we learned from research was how hard it is to energ
 
 Conversations can stay alive and relevant, while keeping control in the hands of the community’s members. make it easier to design a beautiful deck while still giving people some sense of control.
 
-![Waverly case study, image 3](/images/case-studies/waverly/3.png)
+![Waverly case study, image 3](/images/case-studies/waverly/3.webp)
 
 ### Live feedback on a post to increase transparency in moderation
 
@@ -52,4 +52,4 @@ Often posts on communities like Reddit can get rejected despite having a lot of 
 
 It’s still in the early days of Waverly, but we’re so excited to have launched. Now we’re doing the hard work of collecting that initial feedback and reacting to it. The goal is to build a scalable alternative to our current social media networks.
 
-![Waverly case study, image 4](/images/case-studies/waverly/4.png)
+![Waverly case study, image 4](/images/case-studies/waverly/4.webp)

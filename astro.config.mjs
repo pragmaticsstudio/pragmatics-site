@@ -14,5 +14,6 @@ export default defineConfig({
     '/blog-category/branding': '/blog/',
     '/blog-category/design': '/blog/',
     '/blog-category/ux': '/blog/',
+    '/contact': '/studio/',
   },
 });
