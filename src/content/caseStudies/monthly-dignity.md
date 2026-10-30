@@ -25,11 +25,11 @@ We introduced a vibrant color palette with warm hues to evoke a sense of communi
 
 Understanding the importance of accessibility, we restructured the website's information architecture to make navigation intuitive. We developed clear, concise sections that address the needs of their diverse audience, including:
 
+![Monthly Dignity case study, image 1](/images/case-studies/monthly-dignity/1.png)
+
 - **For Individuals**: Information on how to access free menstrual products and educational resources.
 - **For Donors**: Highlighting the impact of donations, with straightforward pathways to contribute.
 - **For Partners**: Showcasing partnership opportunities and success stories to encourage collaboration.
-
-![Monthly Dignity case study, image 1](/images/case-studies/monthly-dignity/1.png)
 
 ## Empowering Through Education
 

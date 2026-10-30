@@ -15,10 +15,10 @@ We collaborated with Studio Wé to help the Government of Ontario enhance their 
 
 Our process started by interviewing over 50 Ontarian entrepreneurs. This allowed us to tailor our design strategies to the needs of businesses across a wide array of sectors. On the digital front, we conducted a complete heuristic analysis of all the sites on the Ontario website that are tailored to small businesses.
 
+![Government of Ontario case study, image 1](/images/case-studies/best-gov-ontario/1.webp)
+
 The revised user journey created multiple paths on the updated website for business owners to get the information they were seeking. This was paired with new service blueprints that integrated customer support and the digital offerings so that entrepreneurs had a consistent experience online and offline.
 
 Due to the sensitive nature of working with public services, we are currently unable to publish the details of this project.
-
-![Government of Ontario case study, image 1](/images/case-studies/best-gov-ontario/1.webp)
 
 ![Government of Ontario case study, image 2](/images/case-studies/best-gov-ontario/2.webp)

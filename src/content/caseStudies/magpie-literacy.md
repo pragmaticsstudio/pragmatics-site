@@ -31,20 +31,20 @@ Far too few reading tools reflect modern educational research or affirm the iden
 
 Leveraging expertise in user research, inclusive design, and game-based learning, we've collaborated with educators and child development specialists to ensure that our tools are not only effective but also fun and affirming.
 
+![Magpie Literacy case study, image 2](/images/case-studies/magpie-literacy/2.png)
+
 > Allan and Charlie can do it all and working with them is always a joy. I very much appreciate their values and dedication to doing work that’s meaningful. They want to do good work that does the right thing. We push each other, and they know when to get down to business while still keeping the pace focused and the mood enjoyable. I’d work with them again in a heartbeat.
 >
 > — Michael Handelman
 > Game Designer, Magpie Literacy
 
-![Magpie Literacy case study, image 2](/images/case-studies/magpie-literacy/2.png)
-
 ## The Challenge of Decoding
 Research tells us that reading comprehension can't flourish until a student crosses what's known as the "decoding threshold." If children struggle to decode words fluently, they can't access meaning, which impedes their reading growth. Our work focuses on helping students reach and exceed this threshold, providing them with a foundation for lifelong literacy.
 
+![Magpie Literacy case study, image 3](/images/case-studies/magpie-literacy/3.png)
+
 ## The First Step
 Our first collaboration with Magpie is a prototype for a foundational reading solution designed specifically for kindergarteners. It teaches essential skills like phonemic awareness, sound-spelling correspondences, and letter formation across the full English alphabet. This integrated instructional sequence offers young learners a structured pathway to build confidence in decoding.
-
-![Magpie Literacy case study, image 3](/images/case-studies/magpie-literacy/3.png)
 
 ## Expressive, Engaging Learning Experiences
 We know that the key to successful literacy tools is engagement—students learn best when they're actively enjoying the experience. To ensure this, we worked with experts in early literacy, learning science, and game design to create a solution that is as enjoyable as it is educational.
