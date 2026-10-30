@@ -2,7 +2,6 @@
 title: "Breaking Echo Chambers for Better Media Literacy"
 description: "Reviving balanced conversations around the news by exposing political bias to news readers."
 subheading: "Reviving balanced conversations around the news by exposing political bias to news readers."
-clean: true
 client: "Ground News"
 year: "2022"
 timeline: "6 Months"

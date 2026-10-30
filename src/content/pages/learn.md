@@ -2,7 +2,6 @@
 title: "Learn"
 description: "Classes, workshops and videos to help you turn your passion for design into skill."
 route: "learn"
-clean: true
 hero:
   heading: "Turn your love of design into designs you love"
   subheading: "Design is for everyone, and our classes, workshops, and videos are designed to help you turn your passion into skill. As experienced educators, we’re dedicated to making design accessible and exciting, whether you’re just starting out or looking to level up."

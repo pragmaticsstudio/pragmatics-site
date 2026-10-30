@@ -2,7 +2,6 @@
 title: "Designing Joyful Literacy Solutions That Empower Every Child"
 description: "Teaming up with Magpie Literacy, we're crafting an educational app focused on boosting literacy among minority children in the US, leveraging insights from top literacy and educational experts to make English learning accessible and impactful."
 subheading: "Teaming up with Magpie Literacy, we're crafting an educational app focused on boosting literacy among minority children in the US, leveraging insights from top literacy and educational experts to make English learning accessible and impactful."
-clean: true
 client: "Magpie Literacy"
 year: "2024"
 timeline: "2 years"

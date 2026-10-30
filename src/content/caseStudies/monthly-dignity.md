@@ -2,7 +2,6 @@
 title: "Building a Website to Support Menstrual Health and Equity"
 description: "We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal"
 subheading: "We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal"
-clean: true
 client: "Monthly Dignity"
 cover: "/images/case-studies/monthly-dignity/0.png"
 coverAlt: "Monthly Dignity case study, cover"

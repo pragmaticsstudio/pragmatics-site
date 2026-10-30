@@ -3,16 +3,13 @@ import { glob } from "astro/loaders";
 
 const schema = z.object({
 	title: z.string(),
-	description: z.string().optional(),
+	description: z.string().min(1),
 });
 
 const link = z.object({ label: z.string(), href: z.string() });
 
 const pageSchema = schema.extend({
 	route: z.string(),
-	// Pages authored as clean markdown + components (new pattern). Legacy pages
-	// keep raw Webflow HTML in the body and render via <Content /> as before.
-	clean: z.boolean().optional(),
 	// Looping muted clip beside the hero text (path without extension; .mp4 and .webm must exist).
 	heroVideo: z.string().optional(),
 	// Homepage sections. Projects and news are built from the collections.
@@ -35,7 +32,6 @@ const pageSchema = schema.extend({
 });
 
 const caseStudySchema = schema.extend({
-	clean: z.boolean().optional(),
 	subheading: z.string().optional(),
 	client: z.string().optional(),
 	year: z.string().optional(),
@@ -52,15 +48,6 @@ const caseStudySchema = schema.extend({
 	// Image 0 from public/images/case-studies/<slug>/: shown on cards and at the top of the page.
 	cover: z.string().optional(),
 	coverAlt: z.string().optional(),
-	// Images 1..n, in the order they appear on the page.
-	gallery: z
-		.array(
-			z.object({
-				src: z.string(),
-				alt: z.string().optional(),
-			}),
-		)
-		.optional(),
 });
 
 const caseStudies = defineCollection({

@@ -2,7 +2,6 @@
 title: "Health Products"
 description: "Give patients the care and healthcare providers the tools they each need."
 route: "health-products"
-clean: true
 hero:
   heading: "Give patients the care and healthcare providers the tools they each need"
   subheading: "Build platforms and products that thoughtfully address the complexities of working with patients, healthcare provides, administrators, and government."

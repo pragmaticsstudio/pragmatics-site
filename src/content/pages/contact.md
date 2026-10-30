@@ -2,7 +2,6 @@
 title: "Contact"
 description: "Let's explore the possibilities UX can unlock for your product."
 route: "contact"
-clean: true
 hero:
   eyebrow: "Contact"
   heading: "Let's explore the possibilities UX can unlock for your product."

@@ -2,7 +2,6 @@
 title: "Transforming Kidney Care with a Digital Coach for Better Health"
 description: "Increasing medical adherence rates of underserved chronic kidney design patients by nudging them into healthier behaviours"
 subheading: "Increasing medical adherence rates of underserved chronic kidney design patients by nudging them into healthier behaviours"
-clean: true
 client: "ColloghCares"
 year: "2023"
 timeline: "4 months"

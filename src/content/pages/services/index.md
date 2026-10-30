@@ -1,8 +1,7 @@
 ---
 title: "Services"
-description: "Strategy, design, research, and branding services for product teams."
+description: "Pragmatics levels up your business with digital products, apps, and experiences that drive customer loyalty and growth."
 route: "services"
-clean: true
 hero:
   heading: "At the intersection of experience, strategy, and creative collaboration."
   subheading: "Pragmatics levels up your business with digital products, apps, and experiences that drive customer loyalty and growth. As advisors and coaches, we deliver cutting-edge solutions while empowering your teams with lasting design expertise."

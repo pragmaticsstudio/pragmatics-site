@@ -2,7 +2,6 @@
 title: "Supporting Ontario's Small Business with Digital Resources for Entrepreneurs"
 description: "The Government of Ontario needed help to develop their resources for entrepreneurs, and enhance accessibility and engagement."
 subheading: "The Government of Ontario needed help to develop their resources for entrepreneurs, and enhance accessibility and engagement."
-clean: true
 client: "Government of Ontario"
 year: "2023"
 timeline: "1 year"

@@ -2,7 +2,6 @@
 title: "Education Products"
 description: "Engage learners and empower instructors."
 route: "education-products"
-clean: true
 hero:
   heading: "Engage learners and empower instructors"
   subheading: "Deliver inclusive digital experiences your students can learn more effectively and get buy-in from your teachers and administrators."

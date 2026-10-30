@@ -2,7 +2,6 @@
 title: "AI Products"
 description: "Lead the way with impactful AI in your product."
 route: "ai-products"
-clean: true
 hero:
   heading: "Lead the way with impactful AI in your product"
   subheading: "Explore, test, and integrate AI in ways that delight your customers and differentiate you everyone else simply adding a chatbot to their website."

@@ -2,7 +2,6 @@
 title: "Streamlining Beekeeping Tools to Protect Bees and Boost Efficiency"
 description: "Enabling commercial beekeepers to extract critical insights about their bee colonies"
 subheading: "Enabling commercial beekeepers to extract critical insights about their bee colonies"
-clean: true
 client: "Nectar"
 year: "2022"
 timeline: "3 months"

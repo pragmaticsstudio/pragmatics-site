@@ -2,7 +2,6 @@
 title: "Redefining Social Spaces to Foster Healthier Conversations"
 description: "Empowering personalized social media with Waverly, we crafted an app that lets users shape their content experience using conversational AI, promoting focused engagement and meaningful digital interactions."
 subheading: "Empowering personalized social media with Waverly, we crafted an app that lets users shape their content experience using conversational AI, promoting focused engagement and meaningful digital interactions."
-clean: true
 client: "Waverly"
 year: "2023"
 timeline: "1 year"

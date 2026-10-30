@@ -2,7 +2,6 @@
 title: "Studio"
 description: "We’re Pragmatics — with an “s.”"
 route: "studio"
-clean: true
 hero:
   heading: "We’re way more than practical. We’re Pragmatics."
   subheading: "We’re Pragmatics — with an “s.” Pragmatics is the art and science of how context contributes to meaning. It’s how a deep understanding of an entire situation — everything implicit and implied, said and unsaid — builds to a holistic understanding of what’s needed to influence that situation."

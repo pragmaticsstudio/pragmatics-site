@@ -2,7 +2,6 @@
 title: "Untangling Complexity with a Brand for AI-Driven Clarity"
 description: "We enhanced Reliant AI's brand identity, aligning it with their mission to democratize complex AI-driven data analysis for the life sciences sector"
 subheading: "We enhanced Reliant AI's brand identity, aligning it with their mission to democratize complex AI-driven data analysis for the life sciences sector"
-clean: true
 client: "Reliant"
 cover: "/images/case-studies/reliant/0.png"
 coverAlt: "Reliant case study, cover"
