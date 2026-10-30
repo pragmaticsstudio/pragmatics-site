@@ -1,7 +1,9 @@
 ---
 title: "Petal Health"
-description: "Petal Health is one of Canada’s top providers of medical workforce scheduling systems, and came to us at a pivotal point in their business."
+description: "Developing a Canadian health-tech’s story of breaking the healthcare crisis loop."
+subheading: "Developing a Canadian health-tech’s story of breaking the healthcare crisis loop."
 client: "Petal Health"
+year: "2025"
 cover: "/images/case-studies/petal-health/0.webp"
 coverAlt: "Petal Health case study, cover"
 order: 2
