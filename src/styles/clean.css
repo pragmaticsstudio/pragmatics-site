@@ -1,3 +1,19 @@
+/* Styles for the site's pages. Brand tokens and the page frame live in brand.css.
+
+   Sections, in file order (search for the name):
+   - Tokens and container (top of the file)
+   - Vertical rhythm
+   - Links & buttons
+   - Hero
+   - Meta list (case study facts), cover image, header and footer (.site-*)
+   - Live-site blocks: bright rules, label column, no filled cards (homepage sections, news cards)
+   - Services, Work, Case study and Post page layouts
+   - Pages with a label column, rules between items, FAQ, team (Studio, Learn, product pages)
+   - Homepage hero with the looping render
+
+   Look: bright cream rules, regular-weight sans-serif headings, no filled cards, links never
+   underlined. Compare any change with the live site at 375px and 1440px. */
+
 /* Mobile-first, brand-aligned styles for the clean pages.
    Palette matches --pragmatics-* tokens defined in brand.css. */
 
@@ -139,11 +155,6 @@
 	opacity: 0.85;
 }
 
-.clean-button--small {
-	padding: 0.55rem 1.25rem;
-	font-size: 0.85rem;
-}
-
 .clean-prose p.clean-cta {
 	max-width: none;
 	text-align: center;
@@ -229,28 +240,12 @@
 	margin-bottom: 0.3rem;
 }
 
-/* --- Gallery --- */
-
 .clean-cover {
 	display: block;
 	width: 100%;
 	height: auto;
 	border-radius: 0.75rem;
 	margin-top: var(--cp-space-md);
-}
-
-.clean-gallery {
-	display: flex;
-	flex-direction: column;
-	gap: var(--cp-space-md);
-	margin-top: var(--cp-space-md);
-}
-
-.clean-gallery img {
-	width: 100%;
-	height: auto;
-	border-radius: 0.75rem;
-	display: block;
 }
 
 /* Images placed in a case study's text run full width, like the cover. */
