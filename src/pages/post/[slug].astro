@@ -1,8 +1,6 @@
 ---
 import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
-import Hero from "../../components/clean/Hero.astro";
-import MetaList from "../../components/clean/MetaList.astro";
 import { imageSize, addImageSizes } from "../../lib/image-size.mjs";
 
 export async function getStaticPaths() {
@@ -18,14 +16,22 @@ const html = addImageSizes(entry.rendered?.html ?? "");
 <Base title={data.title} description={data.description}>
 	<div class="clean-page">
 		<div class="clean-container">
-			<div class="clean-prose">
-				<p><a href="/blog/">← All writing</a></p>
+			<div class="clean-hero clean-hero--post">
+				<p><a class="clean-button clean-button--outline" href="/blog/">← All writing</a></p>
+				<h1 class="clean-hero__heading">{data.title}</h1>
+				{data.description && <p class="clean-hero__subheading">{data.description}</p>}
 			</div>
-			<Hero heading={data.title} subheading={data.description} />
-			{data.author && <MetaList items={[{ label: "Author", value: data.author }]} />}
 			{data.image && <img class="clean-cover" src={data.image} alt={data.imageAlt ?? ""} {...imageSize(data.image)} />}
-			<div class="clean-section clean-prose clean-story">
-				<Fragment set:html={html} />
+			<div class:list={["clean-section", "clean-post", { "clean-post--author": data.author }]}>
+				<div class="clean-prose clean-story">
+					<Fragment set:html={html} />
+				</div>
+				{data.author && (
+					<aside class="clean-post__author">
+						<p class="clean-post__label">Author</p>
+						<p class="clean-lead">{data.author}</p>
+					</aside>
+				)}
 			</div>
 		</div>
 	</div>
