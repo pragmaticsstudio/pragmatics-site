@@ -64,12 +64,12 @@ hero:
 </div>
 <div class="clean-team">
 <article>
-<video autoplay muted loop playsinline preload="metadata" poster="/images/pages/studio/charlie-portrait.jpg"><source src="/video/studio-team-1.mp4" type="video/mp4"/><source src="/video/studio-team-1.webm" type="video/webm"/></video>
+<img src="/images/pages/studio/charlie-portrait.jpg" alt="Charlie Gedeon" width="860" height="849" loading="lazy"/>
 <h3>Charlie Gedeon</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
 </article>
 <article>
-<video autoplay muted loop playsinline preload="metadata" poster="/images/pages/studio/portrait-allan.png"><source src="/video/studio-team-2.mp4" type="video/mp4"/><source src="/video/studio-team-2.webm" type="video/webm"/></video>
+<img src="/images/pages/studio/portrait-allan.png" alt="Allan Macdonald" width="512" height="512" loading="lazy"/>
 <h3>Allan Macdonald</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
 </article>
