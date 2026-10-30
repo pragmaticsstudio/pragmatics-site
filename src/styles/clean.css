@@ -1021,12 +1021,13 @@
 	}
 }
 
-.clean-prose .clean-team video {
+.clean-prose .clean-team img {
 	display: block;
 	width: 100%;
-	aspect-ratio: 4 / 3;
+	height: auto;
+	aspect-ratio: 1;
 	object-fit: cover;
-	border-radius: 1rem;
+	object-position: center top;
 	margin-bottom: var(--cp-space-sm);
 }
 
