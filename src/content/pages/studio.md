@@ -20,16 +20,12 @@ hero:
 <div class="clean-sub clean-sub--tight">
 <h3>Figdone</h3>
 <p>A clean way for you and your team to keep design statuses visible, without cluttering your canvases with unnecessary components and stickers.</p>
-<p><a href="https://www.figma.com/community/plugin/1159865715100399885/figdone"><a href="https://www.figma.com/community/plugin/1159865715100399885/figdone">Figma Community ↗</a></a></p>
+<p><a href="https://www.figma.com/community/plugin/1159865715100399885/figdone">Figma Community ↗</a></p>
 </div>
 <div class="clean-sub clean-sub--tight">
 <h3>Flota</h3>
 <p>Time-boxing experiences in other tools is hard. From lesson plans to workshops, Flota's drag and drop workflow has you covered.</p>
-<p><a href="https://flota.work/"><a href="https://flota.work/">Flota ↗</a></a></p>
-</div>
-<div class="clean-sub clean-sub--tight">
-<h3>Meta j.AI</h3>
-<p>Boost student support and engagement with our AI journaling platform. Analyze reflections, identify needs, and personalize instruction, all while ensuring privacy.</p>
+<p><a href="https://flota.work/">Flota ↗</a></p>
 </div>
 </div>
 </div>
