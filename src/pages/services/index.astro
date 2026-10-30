@@ -1,0 +1,36 @@
+---
+import Base from "../../layouts/Base.astro";
+import Hero from "../../components/clean/Hero.astro";
+import { getPage } from "../../lib/content";
+import { imageSize } from "../../lib/image-size.mjs";
+
+const page = await getPage("services");
+const offers = page.data.offers ?? [];
+---
+
+<Base title={page.data.title} description={page.data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			{page.data.hero && <Hero {...page.data.hero} />}
+			<div class="clean-prose">
+				{offers.map((offer) => (
+					<section class="clean-block clean-service-row" id={offer.id}>
+						<div class="clean-columns">
+							<div class="clean-service-row__label">
+								<h3>{offer.title}</h3>
+								{offer.taglines.map((line) => <p>{line}</p>)}
+							</div>
+							<div>
+								<h3>{offer.headline}</h3>
+								<p>{offer.intro}</p>
+								<ul>{offer.items.map((item) => <li>{item}</li>)}</ul>
+								<p>{offer.outro}</p>
+								<img src={offer.image} alt="" loading="lazy" {...imageSize(offer.image)} />
+							</div>
+						</div>
+					</section>
+				))}
+			</div>
+		</div>
+	</div>
+</Base>

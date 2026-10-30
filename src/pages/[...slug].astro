@@ -6,8 +6,10 @@ import { addImageSizes } from "../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const pages = await getCollection("pages");
+	// These routes have their own page files that build their lists from the collections.
+	const own = new Set(["", "blog", "case-studies", "services"]);
 	return pages
-		.filter((entry) => entry.data.route !== "")
+		.filter((entry) => !own.has(entry.data.route))
 		.map((entry) => ({ params: { slug: entry.data.route }, props: { entry } }));
 }
 
