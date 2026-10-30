@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/clean/Hero.astro";
+import PostCards from "../components/clean/PostCards.astro";
+import { getPage, getPosts } from "../lib/content";
+
+const page = await getPage("blog");
+const posts = await getPosts();
+const featured = posts.filter((p) => p.data.featured);
+const rest = posts.filter((p) => !p.data.featured);
+---
+
+<Base title={page.data.title} description={page.data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			{page.data.hero && <Hero {...page.data.hero} />}
+			<div class="clean-prose">
+				<PostCards items={featured} class="clean-news--featured" />
+				<PostCards items={rest} class="clean-news--rest" />
+			</div>
+		</div>
+	</div>
+</Base>
