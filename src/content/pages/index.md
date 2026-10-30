@@ -1,11 +1,11 @@
 ---
 title: "Pragmatics | Design that transforms your ideas into impactful solutions"
-description: "We help your team create clear messaging and designs that your users will love with our high velocity, collaborative process."
+description: "We started Pragmatics to bring better design experiences to the startups and organizations that we care about, from people’s health to sustainability and education. We’re very proud of the impact we’ve had and the community that we’ve built."
 route: ""
 heroVideo: "/video/header-render"
 hero:
-  heading: "Clarity & impact. Faster than anyone."
-  subheading: "We help your team create clear messaging and designs that your users will love with our high velocity, collaborative process."
+  heading: "A Montreal design studio"
+  subheading: "We started Pragmatics to bring better design experiences to the startups and organizations that we care about, from people’s health to sustainability and education. We’re very proud of the impact we’ve had and the community that we’ve built."
 clients: {"label": "Clients", "logos": [{"name": "Ontario Government", "src": "/images/pages/home/ontario-white.png"}, {"name": "AERDF", "src": "/images/pages/home/aerdf-white.png"}, {"name": "Concordia", "src": "/images/pages/home/concordia-white.png"}, {"name": "Ground News", "src": "/images/pages/home/ground-news-white.png"}, {"name": "Studio We", "src": "/images/pages/home/studio-we-white.svg"}, {"name": "Fintech Cadence", "src": "/images/pages/home/fintech-cadence-white.png"}], "link": {"label": "Explore Case Studies →", "href": "/case-studies/"}}
 services: {"label": "Services", "items": [{"title": "Strategy", "text": "Unlock fresh insights and craft a product strategy that drives impact where it matters most.", "icon": "/images/pages/home/strategy.png", "href": "/services/#product-strategy", "linkLabel": "Read More →"}, {"title": "UI/UX Design", "text": "Break through assumptions with user-centered design that engages and propels your business forward.", "icon": "/images/pages/home/ux.png", "href": "/services/#uiux-design", "linkLabel": "Read More →"}, {"title": "Research", "text": "Discover a tailored approach that creates branding your customers love and grows your business.", "icon": "/images/pages/home/research.png", "href": "/services/#research", "linkLabel": "Read More →"}, {"title": "Branding", "text": "Experience personalized art direction that captures the essence of your business—and you.", "icon": "/images/pages/home/art-direction.png", "href": "/services/#branding", "linkLabel": "Read More →"}]}
 projects: {"heading": "Projects", "button": {"label": "See all Work", "href": "/case-studies/"}}
