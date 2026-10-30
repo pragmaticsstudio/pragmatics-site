@@ -3,6 +3,7 @@ title: "Pragmatics | Design that transforms your ideas into impactful solutions"
 description: ""
 route: ""
 clean: true
+heroVideo: "/video/header-render"
 hero:
   heading: "Clarity & impact. Faster than anyone."
   subheading: "We help your team create clear messaging and designs that your users will love with our high velocity, collaborative process."

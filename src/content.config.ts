@@ -11,6 +11,8 @@ const pageSchema = schema.extend({
 	// Pages authored as clean markdown + components (new pattern). Legacy pages
 	// keep raw Webflow HTML in the body and render via <Content /> as before.
 	clean: z.boolean().optional(),
+	// Looping muted clip beside the hero text (path without extension; .mp4 and .webm must exist).
+	heroVideo: z.string().optional(),
 	hero: z
 		.object({
 			eyebrow: z.string().optional(),

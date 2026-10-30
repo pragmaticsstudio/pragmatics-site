@@ -15,7 +15,17 @@ const { data } = page;
 	{data.clean ? (
 		<div class="clean-page">
 			<div class="clean-container">
-				{data.hero && <Hero {...data.hero} />}
+				{data.hero && data.heroVideo ? (
+					<div class="clean-hero-split">
+						<Hero {...data.hero} />
+						<video class="clean-hero-video" autoplay muted loop playsinline preload="metadata" poster={`${data.heroVideo}-poster.jpg`} width="720" height="720">
+							<source src={`${data.heroVideo}.mp4`} type="video/mp4" />
+							<source src={`${data.heroVideo}.webm`} type="video/webm" />
+						</video>
+					</div>
+				) : (
+					data.hero && <Hero {...data.hero} />
+				)}
 				<div class="clean-prose">
 					<Fragment set:html={html} />
 				</div>
