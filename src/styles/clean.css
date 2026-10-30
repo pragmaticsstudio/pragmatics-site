@@ -7,9 +7,9 @@
 	--cp-space-md: clamp(1.5rem, 3vw, 2.5rem);
 	--cp-space-lg: clamp(2.5rem, 6vw, 5rem);
 	--cp-accent: var(--pragmatics-yellow, #fed66f);
-	--cp-muted: rgba(254, 248, 237, 0.68);
-	--cp-border: rgba(254, 248, 237, 0.14);
-	--cp-card-bg: rgba(254, 248, 237, 0.05);
+	--cp-muted: var(--pragmatics-white, #fef8ed);
+	--cp-border: var(--pragmatics-white, #fef8ed);
+	--cp-card-bg: transparent;
 	color: var(--foreground-color, #fef8ed);
 	font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 	line-height: 1.6;
@@ -28,6 +28,12 @@
 	}
 }
 
+@media (max-width: 479px) {
+	.clean-container {
+		padding-inline: 0;
+	}
+}
+
 /* --- Vertical rhythm --- */
 
 .clean-prose > :first-child {
@@ -41,12 +47,13 @@
 
 .clean-prose h2 {
 	color: inherit;
-	font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+	font-family: sans-serif;
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 400;
 	line-height: 1.2;
-	letter-spacing: -0.01em;
 	margin: var(--cp-space-lg) 0 var(--cp-space-sm);
 	padding-top: var(--cp-space-lg);
-	border-top: 1px solid var(--cp-border);
+	border-top: 2px solid var(--cp-border);
 }
 
 .clean-prose > h2:first-of-type {
@@ -56,8 +63,10 @@
 
 .clean-prose h3 {
 	color: inherit;
-	font-size: 1.1rem;
-	line-height: 1.35;
+	font-family: sans-serif;
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.3;
 	margin: 0 0 0.5rem;
 }
 
@@ -90,7 +99,6 @@
 .clean-meta-list a {
 	color: var(--cp-accent);
 	text-decoration: none;
-	font-weight: 600;
 	transition: opacity 0.15s ease;
 }
 
@@ -111,11 +119,14 @@
 
 .clean-button {
 	display: inline-block;
-	padding: 0.9rem 2rem;
-	border-radius: 0;
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--cp-accent);
+	border-radius: 4px;
 	background: var(--cp-accent);
 	color: var(--bg-color, #000b29);
-	font-weight: 700;
+	font-size: 0.875rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 	text-decoration: none;
 }
 
@@ -144,7 +155,7 @@
 .clean-hero {
 	text-align: center;
 	padding-block: clamp(3rem, 10vw, 6.5rem);
-	border-bottom: 1px solid var(--cp-border);
+	border-bottom: 2px solid var(--cp-border);
 }
 
 .clean-hero__eyebrow {
@@ -157,61 +168,39 @@
 }
 
 .clean-hero__heading {
-	font-size: clamp(2.1rem, 6vw, 3.75rem);
-	line-height: 1.1;
-	letter-spacing: -0.02em;
+	font-family: sans-serif;
+	font-size: clamp(2.1rem, 6vw, 4rem);
+	font-weight: 400;
+	line-height: 1.2;
 	margin: 0 0 1.1rem;
 	color: inherit;
 }
 
 .clean-hero__subheading {
-	font-size: clamp(1.05rem, 2vw, 1.3rem);
-	max-width: 38rem;
+	font-size: clamp(1.05rem, 2vw, 1.4rem);
+	max-width: 60rem;
 	margin-inline: auto;
 	color: var(--cp-muted);
 }
 
-/* --- Client logos --- */
+@media (min-width: 768px) {
+	.clean-hero {
+		text-align: left;
+	}
 
-.clean-clients {
-	text-align: center;
-	padding-block: var(--cp-space-md);
+	.clean-hero__subheading {
+		margin-inline: 0;
+	}
 }
 
-.clean-prose p.clean-clients__label {
-	max-width: none;
-	font-size: 0.8rem;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: 600;
-	color: var(--cp-muted);
-	margin: 0 0 1.25rem;
+/* One rule between the hero and a following block, not two. */
+
+.clean-hero:has(+ .clean-prose > .clean-block:first-child) {
+	border-bottom: 0;
 }
 
-.clean-client-logos {
-	display: flex;
-	flex-wrap: wrap;
-	gap: clamp(1.5rem, 4vw, 3rem);
-	align-items: center;
-	justify-content: center;
-	margin: 0 0 1.5rem;
-	list-style: none;
-	padding: 0;
-}
-
-.clean-client-logos li {
-	border-radius: 0;
-}
-
-.clean-client-logos img {
-	height: auto;
-	max-height: 3rem;
-	width: auto;
-	max-width: 11rem;
-	object-fit: contain;
-	display: block;
-	opacity: 0.9;
-	border-radius: 0;
+.clean-hero + .clean-prose > h2:first-child {
+	margin-top: var(--cp-space-lg);
 }
 
 /* --- Card grid (services, news) --- */
@@ -403,12 +392,8 @@
 }
 
 .site-header {
-	position: sticky;
-	top: 0;
+	position: relative;
 	z-index: 20;
-	background: rgba(0, 11, 41, 0.92);
-	backdrop-filter: blur(8px);
-	border-bottom: 1px solid rgba(254, 248, 237, 0.14);
 }
 
 .site-header__inner {
@@ -423,8 +408,7 @@
 }
 
 .site-logo {
-	font-size: 1rem;
-	font-weight: 700;
+	font-size: 0.875rem;
 	letter-spacing: 0.04em;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -437,7 +421,9 @@
 }
 
 .site-nav__link {
-	font-size: 0.9rem;
+	font-size: 0.875rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 	color: var(--cp-muted);
 	text-decoration: none;
 }
@@ -447,7 +433,6 @@
 }
 
 .site-footer {
-	border-top: 1px solid var(--cp-border);
 	margin-top: var(--cp-space-lg);
 }
 
@@ -456,7 +441,7 @@
 	margin-inline: auto;
 	padding: 1.1rem clamp(1rem, 4vw, 3rem) 1.6rem;
 	color: var(--cp-muted);
-	font-size: 0.9rem;
+	font-size: 0.875rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -481,4 +466,324 @@
 
 .site-footer__links a:hover {
 	color: var(--cp-accent);
+}
+
+/* --- Live-site blocks: bright rules, label column, no filled cards --- */
+
+.clean-block {
+	border-top: 2px solid var(--cp-border);
+	padding-block: var(--cp-space-lg);
+}
+
+.clean-prose .clean-block h2 {
+	margin: 0 0 var(--cp-space-md);
+	padding: 0;
+	border: 0;
+}
+
+.clean-prose .clean-block p {
+	max-width: none;
+}
+
+.clean-prose .clean-block h3 {
+	font-size: 1.5rem;
+}
+
+.clean-prose .clean-block img {
+	border-radius: 1rem;
+}
+
+.clean-prose a.clean-link {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.clean-prose a.clean-link:hover {
+	color: var(--cp-accent);
+}
+
+.clean-lead {
+	font-size: clamp(1.1rem, 2vw, 1.5rem);
+	line-height: 1.5;
+}
+
+/* Label on the left, a vertical rule, content on the right. */
+
+.clean-row {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-sm);
+}
+
+.clean-prose .clean-row__label {
+	margin: 0;
+	font-size: 0.875rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.clean-row {
+		grid-template-columns: 12rem minmax(0, 1fr);
+		gap: 0;
+	}
+
+	.clean-prose .clean-row__label {
+		padding-right: 1.5rem;
+		border-right: 1px solid var(--cp-border);
+	}
+
+	.clean-row__body {
+		padding-left: 3rem;
+	}
+}
+
+.clean-client-logos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+	gap: var(--cp-space-sm);
+	align-items: center;
+	margin: 0 0 var(--cp-space-sm);
+	padding: 0;
+	list-style: none;
+}
+
+.clean-client-logos li {
+	margin: 0;
+	padding: 0;
+}
+
+.clean-prose .clean-client-logos img {
+	width: 100%;
+	height: auto;
+	border-radius: 0;
+}
+
+.clean-prose p.clean-cta {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* Services: outlined icon, title, text, link. */
+
+.clean-services {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-md) 3rem;
+}
+
+@media (min-width: 768px) {
+	.clean-services {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.clean-service {
+	display: flex;
+	gap: 1.5rem;
+	align-items: flex-start;
+}
+
+.clean-prose .clean-service img {
+	width: clamp(4.5rem, 12vw, 7rem);
+	flex: none;
+	border-radius: 0;
+}
+
+.clean-prose .clean-service h3 {
+	margin: 0 0 0.5rem;
+	text-transform: uppercase;
+}
+
+/* Projects: one large, then two across. */
+
+.clean-project {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.clean-project__media {
+	display: block;
+}
+
+.clean-prose .clean-project__media img {
+	width: 100%;
+	height: auto;
+}
+
+.clean-prose .clean-project h3 {
+	margin: 0.5rem 0 0;
+}
+
+.clean-prose .clean-project p {
+	margin: 0;
+}
+
+.clean-project-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 3rem;
+	margin-top: var(--cp-space-md);
+	padding-top: var(--cp-space-md);
+	border-top: 2px solid var(--cp-border);
+}
+
+@media (min-width: 768px) {
+	.clean-project-grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.clean-prose .clean-block li {
+	margin-bottom: 0.5rem;
+}
+
+.clean-block > .clean-cta {
+	margin-top: var(--cp-space-md);
+}
+
+/* Image beside text. */
+
+.clean-split {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-sm);
+	align-items: start;
+}
+
+@media (min-width: 768px) {
+	.clean-split {
+		grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+		gap: 1rem;
+	}
+}
+
+.clean-prose .clean-split img {
+	width: 100%;
+	height: auto;
+}
+
+/* Two columns split by a vertical rule. */
+
+.clean-columns {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-sm);
+}
+
+@media (min-width: 768px) {
+	.clean-columns {
+		grid-template-columns: 1fr 2fr;
+		gap: 0;
+	}
+
+	.clean-columns > :first-child {
+		padding-right: 4rem;
+	}
+
+	.clean-columns > :last-child {
+		padding-left: 4rem;
+		border-left: 1px solid var(--cp-border);
+	}
+}
+
+.clean-prose .clean-columns h2 {
+	margin: 0;
+}
+
+.clean-experiments {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-md);
+	margin-top: var(--cp-space-md);
+}
+
+@media (min-width: 640px) {
+	.clean-experiments {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.clean-prose .clean-experiments img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.clean-prose .clean-experiments h3 {
+	margin: 0 0 0.75rem;
+}
+
+/* Latest news: title row, rule, three across. */
+
+.clean-block__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--cp-space-sm);
+	padding-bottom: var(--cp-space-md);
+	border-bottom: 2px solid var(--cp-border);
+}
+
+.clean-prose .clean-block__head h2 {
+	margin: 0;
+}
+
+.clean-button--outline,
+.clean-prose a.clean-button--outline {
+	background: transparent;
+	border-color: var(--cp-border);
+	color: var(--foreground-color);
+}
+
+.clean-news {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--cp-space-md);
+	margin-top: var(--cp-space-md);
+}
+
+@media (min-width: 768px) {
+	.clean-news {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0;
+	}
+
+	.clean-news__item {
+		padding-inline: 3rem;
+		border-left: 1px solid rgba(254, 248, 237, 0.14);
+	}
+
+	.clean-news__item:first-child {
+		padding-left: 0;
+		border-left: 0;
+	}
+
+	.clean-news__item:last-child {
+		padding-right: 0;
+	}
+}
+
+.clean-news__media {
+	display: block;
+}
+
+.clean-prose .clean-news__media img {
+	width: 100%;
+	height: auto;
+}
+
+.clean-prose .clean-news__tag {
+	margin: 1.5rem 0 0.5rem;
+	font-size: 0.875rem;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.clean-prose .clean-news__item h3 {
+	margin: 0;
 }

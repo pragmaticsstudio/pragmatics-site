@@ -41,6 +41,12 @@ img {
 	border: 1px solid var(--pragmatics-white);
 }
 
+@media (max-width: 479px) {
+	.site-shell {
+		border-width: 0;
+	}
+}
+
 .site-main {
 	flex: 1;
 }
