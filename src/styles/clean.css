@@ -272,10 +272,20 @@
 }
 
 .site-logo {
-	font-size: 0.875rem;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	text-decoration: none;
+	display: block;
+	line-height: 0;
+}
+
+.site-logo img {
+	display: block;
+	width: auto;
+	height: 2.75rem;
+}
+
+@media (min-width: 768px) {
+	.site-logo img {
+		height: 3.25rem;
+	}
 }
 
 .site-nav {
