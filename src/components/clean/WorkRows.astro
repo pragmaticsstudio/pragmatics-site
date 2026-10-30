@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { imageSize } from "../../lib/image-size.mjs";
+
+interface Props {
+	items: CollectionEntry<"caseStudies">[];
+}
+
+const rows = Astro.props.items.map((entry) => {
+	const src = entry.data.cardImage ?? entry.data.cover;
+	return { slug: entry.id, title: entry.data.title, tags: entry.data.tags ?? [], src, size: src ? imageSize(src) : undefined };
+});
+---
+
+{rows.map((r) => (
+	<article class="clean-block clean-work-row">
+		<div class="clean-work-row__body">
+			<h2><a class="clean-link" href={`/case-studies/${r.slug}/`}>{r.title}</a></h2>
+			{r.tags.length > 0 && <ul class="clean-tags">{r.tags.map((t) => <li>{t}</li>)}</ul>}
+			<p><a class="clean-button clean-button--outline" href={`/case-studies/${r.slug}/`}>View Project</a></p>
+		</div>
+		<a class="clean-work-row__media" href={`/case-studies/${r.slug}/`}><img src={r.src} alt="" loading="lazy" {...r.size} /></a>
+	</article>
+))}

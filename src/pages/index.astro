@@ -1,12 +1,137 @@
 ---
-import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
+import Hero from "../components/clean/Hero.astro";
+import ProjectCards from "../components/clean/ProjectCards.astro";
+import PostCards from "../components/clean/PostCards.astro";
+import { getPage, getFeaturedWork, getPosts } from "../lib/content";
+import { imageSize } from "../lib/image-size.mjs";
 
-const page = (await getCollection("pages")).find((entry) => entry.data.route === "");
-if (!page) throw new Error("Homepage content is missing");
-const { Content } = await render(page);
+const page = await getPage("");
+const { data } = page;
+const projects = await getFeaturedWork();
+const news = (await getPosts()).slice(0, 3);
+const withSize = (src: string) => ({ src, ...imageSize(src) });
 ---
 
-<Base title={page.data.title} description={page.data.description}>
-	<Content />
+<Base title={data.title} description={data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			{data.hero && data.heroVideo ? (
+				<div class="clean-hero-split">
+					<Hero {...data.hero} />
+					<video class="clean-hero-video" autoplay muted loop playsinline preload="metadata" poster={`${data.heroVideo}-poster.jpg`} width="720" height="720">
+						<source src={`${data.heroVideo}.mp4`} type="video/mp4" />
+						<source src={`${data.heroVideo}.webm`} type="video/webm" />
+					</video>
+				</div>
+			) : (
+				data.hero && <Hero {...data.hero} />
+			)}
+			<div class="clean-prose">
+				{data.clients && (
+					<section class="clean-block clean-row" id="clients">
+						<p class="clean-row__label">{data.clients.label}</p>
+						<div class="clean-row__body">
+							<ul class="clean-client-logos">
+								{data.clients.logos.map((logo) => (
+									<li><img {...withSize(logo.src)} alt={logo.name} loading="lazy" /></li>
+								))}
+							</ul>
+							<p class="clean-cta"><a href={data.clients.link.href}>{data.clients.link.label}</a></p>
+						</div>
+					</section>
+				)}
+
+				{data.services && (
+					<section class="clean-block clean-row" id="services">
+						<p class="clean-row__label">{data.services.label}</p>
+						<div class="clean-row__body">
+							<div class="clean-services">
+								{data.services.items.map((item) => (
+									<div class="clean-service">
+										<img {...withSize(item.icon)} alt="" loading="lazy" />
+										<div>
+											<h3>{item.title}</h3>
+											<p>{item.text}</p>
+											<p><a href={item.href}>{item.linkLabel}</a></p>
+										</div>
+									</div>
+								))}
+							</div>
+						</div>
+					</section>
+				)}
+
+				{data.projects && projects.length > 0 && (
+					<section class="clean-block" id="projects">
+						<h2>{data.projects.heading}</h2>
+						<ProjectCards items={projects} />
+						<p class="clean-cta"><a class="clean-button" href={data.projects.button.href}>{data.projects.button.label}</a></p>
+					</section>
+				)}
+
+				{data.learn && (
+					<section class="clean-block" id="learn">
+						<h2>{data.learn.heading}</h2>
+						<div class="clean-split">
+							<img {...withSize(data.learn.image)} alt="" loading="lazy" />
+							<div>
+								<p class="clean-lead">{data.learn.lead}</p>
+								<ul>
+									{data.learn.items.map((item) => (
+										<li><strong>{item.label}</strong> {item.text}</li>
+									))}
+								</ul>
+								<p><a href={data.learn.link.href}>{data.learn.link.label}</a></p>
+							</div>
+						</div>
+					</section>
+				)}
+
+				{data.experiments && (
+					<section class="clean-block" id="experiments">
+						<h2>{data.experiments.heading}</h2>
+						<div class="clean-columns">
+							<p class="clean-lead">{data.experiments.intro}</p>
+							<div>
+								<p class="clean-lead">{data.experiments.lead}</p>
+								<div class="clean-experiments">
+									{data.experiments.items.map((item) => (
+										<article>
+											<img {...withSize(item.image)} alt="" loading="lazy" />
+											<h3>{item.title}</h3>
+											<p>{item.text}</p>
+											<p><a href={item.link.href}>{item.link.label}</a></p>
+										</article>
+									))}
+								</div>
+							</div>
+						</div>
+					</section>
+				)}
+
+				{data.about && (
+					<section class="clean-block" id="about">
+						<div class="clean-columns">
+							<h2>{data.about.heading}</h2>
+							<div>
+								{data.about.paragraphs.map((text) => <p class="clean-lead">{text}</p>)}
+								<p><a class="clean-button" href={data.about.button.href}>{data.about.button.label}</a></p>
+							</div>
+						</div>
+					</section>
+				)}
+
+				{data.news && news.length > 0 && (
+					<section class="clean-block" id="news">
+						<div class="clean-block__head">
+							<h2>{data.news.heading}</h2>
+							<a class="clean-button clean-button--outline" href={data.news.button.href}>{data.news.button.label}</a>
+						</div>
+						<PostCards items={news} />
+					</section>
+				)}
+			</div>
+		</div>
+	</div>
 </Base>

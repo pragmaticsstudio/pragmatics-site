@@ -1,0 +1,236 @@
+# Simplifying the Pragmatics site
+
+> **Status: complete (Oct 2026).** Every task below shipped on `copilot/cleanupmobile-markdown` and went to `main` in one pull request. This file is kept as a record of the plan and the rules. Day-to-day instructions are in the [README](../README.md).
+
+This is the working plan for turning the Webflow export into a simple static
+site that can live in this repo for years without upkeep. It is written so any
+agent or person can pick up the next task cold.
+
+Tracking issue: [#4](https://github.com/pragmaticsstudio/pragmatics-site/issues/4).
+Every task below is a GitHub issue; the issue has the detailed steps and the
+"done when" checks. This file explains the goal, the rules and the workflow.
+
+## The goal
+
+- **Content is plain markdown.** Facts go in frontmatter, prose goes in the
+  body. No HTML in content files.
+- **One small stylesheet.** `src/styles/brand.css` (tokens and base) and
+  `src/styles/clean.css` (everything else). No Webflow CSS.
+- **No client JavaScript.** Nothing the page needs at runtime.
+- **No new dependencies.** `astro` stays the only one in `package.json`.
+  One-off helpers (HTML→markdown, image resizing) are installed with
+  `npm i --no-save` and never committed.
+- **Only the assets we use,** under readable paths in `public/images/`.
+- **Hosted on GitHub Pages** exactly as today (`.github/workflows/deploy.yml`,
+  `public/CNAME`).
+
+## Ground rules
+
+1. **Keep the original wording.** Converting a page is a format change, not an
+   edit. Don't summarize, shorten or "improve" the copy. If something reads
+   wrong, leave it and mention it on the issue.
+2. **Look the same, or better.** Reuse the existing `clean-*` classes before
+   adding CSS. Check every page you touch at phone width (375px) and desktop
+   width.
+   The look is the live site's, and it is part of the design:
+   - a bright 1px cream frame inset from the window edge (none on phones);
+   - full-strength 2px cream rules between sections, and 1px vertical rules
+     beside labels and columns;
+   - a small caps label on the left of a section, with the content on the right;
+   - outlined line icons and plain text, never filled or boxed cards;
+   - regular-weight sans-serif headings, full-colour text, navy, cream and
+     yellow, and uppercase letter-spaced buttons with 4px corners;
+   - **links are never underlined**; hover turns them yellow.
+
+   Don't remove or restyle these, and compare every page you touch with its
+   version on `main` at both widths. Copy the live text exactly.
+3. **No forms.** GitHub Pages can't process them, so there are no contact,
+   newsletter or sign-up forms. Use plain `mailto:` links and the social links
+   instead, and keep any text the form block had as plain copy only if the
+   owner asks for it.
+4. **Don't delete pages on your own.** Which legacy pages stay is the owner's
+   call on [#6](https://github.com/pragmaticsstudio/pragmatics-site/issues/6).
+5. **`npm run check` must not get worse.** Once
+   [#5](https://github.com/pragmaticsstudio/pragmatics-site/issues/5) lands, run
+   it before every push. A task may not add broken links; the final tasks get
+   the count to zero.
+6. **Small commits.** One page, post or case study per commit.
+
+## Where things stand (Oct 2026)
+
+| | Clean markdown | Raw Webflow HTML |
+|---|---|---|
+| Pages (`src/content/pages`) | homepage, blog, case-studies, services | studio, contact, learn, 3 product pages, 8 category pages |
+| Case studies | ground-news, nectar | 7 others |
+| Posts | none | all 11 |
+
+- `src/layouts/Base.astro` no longer loads `webflow.css`, so **raw HTML pages
+  render unstyled on this branch.** That's expected until they are converted.
+  `main`, the live site, is unaffected.
+- `public/webflow/` is 129 MB; about 105 MB of it is referenced.
+- Pages opt into the new layout with `clean: true` in frontmatter. That flag
+  goes away at the end ([#12](https://github.com/pragmaticsstudio/pragmatics-site/issues/12)).
+
+## Tasks, in order
+
+| # | Task | Depends on |
+|---|---|---|
+| [#14](https://github.com/pragmaticsstudio/pragmatics-site/issues/14) | Show case study images full width, in order | – |
+| [#15](https://github.com/pragmaticsstudio/pragmatics-site/issues/15) | Compress the case study images (28 MB of PNGs) | – |
+| [#16](https://github.com/pragmaticsstudio/pragmatics-site/issues/16) | Add Petal Health and Common Sense Media case studies | owner's copy, best after #14 |
+| [#5](https://github.com/pragmaticsstudio/pragmatics-site/issues/5) | Add `npm run check` (build + verify links and assets) | – |
+| [#6](https://github.com/pragmaticsstudio/pragmatics-site/issues/6) | **Owner decision:** which legacy pages and videos to keep | – |
+| [#7](https://github.com/pragmaticsstudio/pragmatics-site/issues/7) | Convert the 11 blog posts | #5 |
+| [#8](https://github.com/pragmaticsstudio/pragmatics-site/issues/8) | Convert the 7 remaining case studies | #5 |
+| [#9](https://github.com/pragmaticsstudio/pragmatics-site/issues/9) | Convert kept pages, redirect dropped ones | #5, #6 |
+| [#11](https://github.com/pragmaticsstudio/pragmatics-site/issues/11) | Generate the homepage, blog and work cards from the collections | #7, #8 |
+| [#10](https://github.com/pragmaticsstudio/pragmatics-site/issues/10) | Move used images to `public/images/`, delete Webflow assets | #6, #7, #8, #9, #11 |
+| [#12](https://github.com/pragmaticsstudio/pragmatics-site/issues/12) | Remove the legacy rendering path, tighten schemas | #7–#11 |
+| [#13](https://github.com/pragmaticsstudio/pragmatics-site/issues/13) | Authoring guide in the README, CI check, ship to `main` | all |
+
+Next up: #5, then #14, then #8 and #7. #14 goes right before #8 so converted
+case studies get the full-width image layout. #15 and #16 come after; #16
+needs the owner's copy. Case study images live in
+`public/images/case-studies/<slug>/<n>.png`; `0` is the cover and `1..n`
+appear in that order. #7, #8 and #9 touch different folders and can run in
+parallel.
+
+## Workflow
+
+The integration branch is **`copilot/cleanupmobile-markdown`**. Nothing goes to
+`main` until [#13](https://github.com/pragmaticsstudio/pragmatics-site/issues/13).
+
+To pick up a task:
+
+1. Pick the lowest-numbered open issue whose dependencies are closed and
+   that nobody is assigned to. Assign yourself, or comment "Taking this"
+   if you can't assign.
+2. Branch from the latest integration branch:
+   ```bash
+   git fetch origin copilot/cleanupmobile-markdown
+   git checkout -b simplify/<issue-number>-<short-name> origin/copilot/cleanupmobile-markdown
+   ```
+3. Do the work, following the issue's steps. Run `npm run check` (or
+   `npx astro build` before #5 exists).
+4. Open a PR **into `copilot/cleanupmobile-markdown`**, not `main`. Put
+   `Part of #<issue>` in the description, along with the before and after
+   `npm run check` counts and phone and desktop screenshots of a changed page.
+5. After the PR merges, **close the issue by hand.** GitHub only auto-closes
+   issues for PRs into the default branch, so `Closes #N` won't fire here.
+   Leave a one-line comment on the issue saying what shipped.
+6. If you get stuck or a step in the issue turns out to be wrong, comment on
+   the issue instead of guessing, and update the issue body if the plan
+   changes.
+7. **Update the page review board** (next section) and bump its revision
+   number. Every task, no exceptions.
+
+## Page review board
+
+The owner tracks progress visually on a private Claude Artifact:
+
+**https://claude.ai/artifact/XMCbAwR7eUW2V48S3HxvTx**
+
+It holds desktop and phone screenshots of every page, labelled by name and
+URL. **Every page has its own revision number** and history (Rev 1, Rev 2…),
+and the board as a whole has a "Board rev" with its own history. Screenshots
+and the script that takes them are **never committed to this repo**. They
+live only on the board.
+
+After your PR merges into the integration branch, update the board:
+
+1. **Read it first.** Use the Artifact tool with `action: "read"` and the URL
+   above, and build on the file it returns, not on a copy from memory.
+2. **Build the integration branch** at its new head (`npx astro build`) and
+   serve `dist/` locally, for example with `python3 -m http.server`.
+3. **Retake the screenshots** with a throwaway Playwright script in your
+   scratch directory, never in the repo:
+   - Desktop: 1440×900 viewport, scale 1, **full page**.
+   - Phone: 390×844 viewport, scale 2, `isMobile`, **first screen only**.
+   - Scroll each page top to bottom before capturing so lazy images load.
+   - Save as JPEG, quality ~68, named `shots/<key>-desktop.jpg` and
+     `shots/<key>-phone.jpg`. `<key>` comes from the `groups` array in the
+     board's script; use the same keys so the page picks the shots up.
+4. **Bump each changed page's revision.** In the board's `groups` array, every
+   page has a `history` list, newest first. For each page that changed in your
+   task (its source files or shared layout/CSS changed, or the new screenshot
+   visibly differs from the one on the board), add an entry to the **top** of
+   that page's `history`:
+   ```js
+   { rev: 2, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", change: "#7: converted to markdown, new post layout." },
+   ```
+   - `rev` is that page's previous number plus one. Each page counts on its
+     own, so the blog post may be at Rev 3 while Contact is still at Rev 1.
+   - `change` names the issue and says in a few words what changed on
+     **that** page.
+   - A page that didn't change keeps its revision and its old screenshots.
+     Don't re-upload them.
+5. **Update the page list** in `groups` when a page was dropped, merged or
+   added. A new page starts at Rev 1. Also update each page's `verdict` and
+   `note` to match decisions in #6. Verdicts are `ctx`, `keep`, `ask`,
+   `drop`, `decided` and `converted`.
+6. **Bump the board revision.** Add an entry to the top of the `revisions`
+   array, naming the issue and listing the pages you bumped:
+   ```js
+   { rev: 3, date: "YYYY-MM-DD", source: "copilot/cleanupmobile-markdown @ <short sha>", note: "#7: Blog post → Rev 2, Blog index → Rev 2." },
+   ```
+7. **Publish to the same URL**, passing `url` with the link above, the page
+   file, and only the changed shots in `files`. Set a shot to `null` to
+   remove a dropped page's images.
+8. **Report the numbers.** End your issue comment with the board revision
+   and each page you bumped, for example
+   `Review board: Rev 3 (Blog post Rev 2, Blog index Rev 2)`.
+
+If your tool can't publish Claude Artifacts (for example GitHub Copilot),
+skip the board and end your issue comment with
+`Review board: not updated`. The next Claude session catches it up in a
+single revision that covers every task since the last one.
+
+## Conventions
+
+**Running locally**
+
+```bash
+npm install
+```
+
+```bash
+npx astro dev --background
+```
+
+Stop it with `npx astro dev stop`.
+
+**Case study frontmatter** (copy `src/content/caseStudies/ground-news.md`):
+
+```yaml
+title: "Breaking Echo Chambers for Better Media Literacy"
+description: "One sentence for search results."
+subheading: "One line under the title."
+client: "Ground News"
+year: "2022"
+timeline: "6 months"
+website: "https://ground.news/"
+gallery:
+  - src: "/images/case-studies/ground-news/cover.png"
+    alt: "…"
+```
+
+**Page frontmatter** (copy `src/content/pages/services/index.md`):
+
+```yaml
+title: "Services"
+description: "…"
+route: "services"
+hero:
+  heading: "…"
+  subheading: "…"
+```
+
+**Images:** `public/images/<collection>/<slug>/<readable-name>.<ext>`,
+referenced as `/images/…`. Until
+[#10](https://github.com/pragmaticsstudio/pragmatics-site/issues/10) runs,
+converted content keeps its `/webflow/images/…` paths. Point at the largest
+original file, never a `-p-500` or `-p-800` variant.
+
+**Redirects:** for removed pages, use the `redirects` map in
+`astro.config.mjs`. Astro writes a static redirect page, which works on
+GitHub Pages.

@@ -1,0 +1,20 @@
+---
+interface Props {
+	eyebrow?: string;
+	heading: string;
+	subheading?: string;
+	ctaLabel?: string;
+	ctaHref?: string;
+}
+
+const { eyebrow, heading, subheading, ctaLabel, ctaHref } = Astro.props;
+---
+
+<div class="clean-hero">
+	{eyebrow && <p class="clean-hero__eyebrow">{eyebrow}</p>}
+	<h1 class="clean-hero__heading">{heading}</h1>
+	{subheading && <p class="clean-hero__subheading">{subheading}</p>}
+	{ctaLabel && ctaHref && (
+		<p><a class="clean-button" href={ctaHref}>{ctaLabel}</a></p>
+	)}
+</div>

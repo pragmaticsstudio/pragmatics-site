@@ -1,6 +1,8 @@
 ---
-import { getCollection, render } from "astro:content";
+import { getCollection } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import MetaList from "../../components/clean/MetaList.astro";
+import { imageSize, addImageSizes } from "../../lib/image-size.mjs";
 
 export async function getStaticPaths() {
 	const entries = await getCollection("caseStudies");
@@ -8,9 +10,32 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
+const { data } = entry;
+
+const storyHtml = addImageSizes(entry.rendered?.html ?? "");
+
+const metaItems = [
+	data.client && { label: "Client", value: data.client },
+	data.year && { label: "Year", value: data.year },
+	data.timeline && { label: "Timeline", value: data.timeline },
+	data.website && { label: "Website", value: data.website.replace(/^https?:\/\//, "").replace(/\/$/, ""), href: data.website },
+].filter(Boolean) as { label: string; value: string; href?: string }[];
 ---
 
-<Base title={entry.data.title} description={entry.data.description}>
-	<Content />
+<Base title={data.title} description={data.description}>
+	<div class="clean-page">
+		<div class="clean-container">
+			<div class="clean-hero clean-hero--split">
+				<div>
+					<h1 class="clean-hero__heading">{data.title}</h1>
+					{data.subheading && <p class="clean-hero__subheading">{data.subheading}</p>}
+				</div>
+				{metaItems.length > 0 && <MetaList items={metaItems} side />}
+			</div>
+			{data.cover && <img class="clean-cover" src={data.cover} alt={data.coverAlt ?? ""} {...imageSize(data.cover)} />}
+			<div class="clean-section clean-prose clean-story">
+				<Fragment set:html={storyHtml} />
+			</div>
+		</div>
+	</div>
 </Base>

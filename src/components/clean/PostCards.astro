@@ -1,0 +1,22 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { imageSize } from "../../lib/image-size.mjs";
+
+interface Props {
+	items: CollectionEntry<"posts">[];
+	class?: string;
+}
+
+const { items, class: className } = Astro.props;
+const cards = items.map((entry) => ({ slug: entry.id, title: entry.data.title, tag: entry.data.tag, src: entry.data.image, size: entry.data.image ? imageSize(entry.data.image) : undefined }));
+---
+
+<div class:list={["clean-news", className]}>
+	{cards.map((c) => (
+		<article class="clean-news__item">
+			{c.src && <a class="clean-news__media" href={`/post/${c.slug}/`}><img src={c.src} alt="" loading="lazy" {...c.size} /></a>}
+			{c.tag && <p class="clean-news__tag">{c.tag}</p>}
+			<h3><a class="clean-link" href={`/post/${c.slug}/`}>{c.title}</a></h3>
+		</article>
+	))}
+</div>
