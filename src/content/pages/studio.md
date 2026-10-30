@@ -73,6 +73,7 @@ hero:
 <img src="/images/pages/studio/portrait-allan.png" alt="Allan Macdonald" width="512" height="512" loading="lazy"/>
 <h3>Allan Macdonald</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
+<p><a href="https://allan-macdonald.com/">allan-macdonald.com</a></p>
 </article>
 </div>
 </div>
