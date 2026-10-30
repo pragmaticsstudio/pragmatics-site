@@ -104,8 +104,7 @@
 
 .clean-prose a:hover,
 .clean-meta-list a:hover {
-	text-decoration: underline;
-	text-underline-offset: 0.2em;
+	color: var(--cp-accent);
 }
 
 .clean-prose h3 a {
@@ -312,8 +311,6 @@
 	display: inline-block;
 	font-size: 0.85rem;
 	font-weight: 600;
-	border-bottom: 1px solid currentColor;
-	padding-bottom: 0.1rem;
 }
 
 .clean-prose a.clean-project-card__view {
@@ -495,7 +492,7 @@
 
 .clean-prose a.clean-link {
 	color: inherit;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .clean-prose a.clean-link:hover {
