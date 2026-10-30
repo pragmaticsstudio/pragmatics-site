@@ -17,7 +17,7 @@ hero:
 <li>Learner engagement is dropping off rapidly</li><li>Course completion rates are lower than expected</li><li>Educators find it challenging to create and manage content</li><li>Accessibility issues are excluding some learners</li><li>Assessment tools fail to provide meaningful insights</li><li>The learning experience feels disconnected across different devices</li>
 </ul>
 <div class="clean-sub">
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66b390b2e3de3910362f19b1_Kid-render.png" alt="" loading="lazy"/>
+<img src="/images/site/kid-render.jpg" alt="" loading="lazy"/>
 <p class="clean-label">Case Study</p>
 <h3>Empowering Readers with Game-Driven Literacy Tools</h3>
 <div class="clean-twocols">
@@ -42,17 +42,17 @@ hero:
 <h3>Products and experiences we design</h3>
 <div class="clean-cards3">
 <article>
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66be62dcfcb814368969484f_Screenshot%202024-08-15%20at%204.19.00 PM.png" alt="" loading="lazy"/>
+<img src="/images/pages/education-products/screenshot-2024-08-15-at-4-19-00-pm.jpg" alt="" loading="lazy"/>
 <h4><strong>Game-Based Learning</strong></h4>
 <p>Engage students with research-backed, interactive games that make learning foundational skills fun and effective.</p>
 </article>
 <article>
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66be6276b247c1824dba777f_Ground%20News%20-%20Cover.png" alt="" loading="lazy"/>
+<img src="/images/pages/education-products/ground-news-cover.png" alt="" loading="lazy"/>
 <h4><strong>Media Literacy Platforms</strong></h4>
 <p>Deliver fact-based news and analysis tools that help develop critical thinking and media literacy.</p>
 </article>
 <article>
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66ba25aff783d0bd926aba31_Running%20Workshop%202.png" alt="" loading="lazy"/>
+<img src="/images/pages/education-products/running-workshop-2.webp" alt="" loading="lazy"/>
 <h4><strong>Instructional Design Tools</strong></h4>
 <p>Create custom, dynamic curricula that empower educators and drive better outcomes across diverse learning environments.</p>
 </article>

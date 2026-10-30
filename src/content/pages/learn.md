@@ -10,7 +10,7 @@ hero:
 
 <p class="clean-lead">Join us for hands-on learning that deepens your design knowledge, sharpens your creativity, and empowers you to create work you’ll love. From workshops at our studio to tailored sessions for your team, we’re here to inspire, teach, and help you grow as a designer.</p>
 
-<img class="clean-wide" src="/webflow/images/659c2fa4e3e7e0bb39221121/66ba2405e22bf8aaddd8f62b_Running%20Workshop.png" alt="" loading="lazy"/>
+<img class="clean-wide" src="/images/pages/learn/running-workshop.jpg" alt="" loading="lazy"/>
 
 <section class="clean-block" id="workshops">
 <div class="clean-columns clean-columns--even">

@@ -1,7 +1,7 @@
 ---
 title: "Can AI Challenge Us to Think Better? Insights for Building Responsible Platforms"
 description: "Explore how AI can challenge misinformation, promote critical thinking, and drive more informed, engaged audiences."
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/672d2adef6ce1e129f505e83_AI%20that%20challenges.png"
+image: "/images/posts/can-ai-challenge-us-to-think-better-insights-for-building-responsible-platforms/cover.png"
 order: 3
 tag: "UX"
 ---
@@ -10,7 +10,7 @@ For many users, the experience with ChatGPT is quite accommodating. You throw in
 
 Recently, we shared a ChatGPT conversation on Slack, and the embedded preview of the link caught our attention. OpenAI had described ChatGPT as a system that "listens, learns, and challenges." The word "challenges" stood out.
 
-![](/webflow/images/659c2fa4e3e7e0bb3922119d/672d2a0b0ec9cd66ee806e17_AD_4nXdbKu3-vJtFDcjUYJPIbum__8WCxqaDyFGzr5uFvaJ_gf---CZM9xavEyceDLyecw1TWxfdt3gvGqjKMe2c3EsPAyL09_EC02gD8-dQkNK0jNla4bppR_Y_NblzC92ZQZpQI-krxeklXaZMCzl4C7RVJmnM.png)
+![](/images/posts/can-ai-challenge-us-to-think-better-insights-for-building-responsible-platforms/figure-1.png)
 
 It wasn't a word we naturally associated with ChatGPT. It's an adjective that carries weight, something that implies confrontation, or at the very least, a form of constructive pushback. So, we found ourselves wondering: what does it mean for an AI to "challenge" us? And perhaps more importantly, is this something we actually want?
 

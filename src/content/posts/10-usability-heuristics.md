@@ -2,7 +2,7 @@
 title: "Using Assessment Questions to Improve the Effectiveness of the 10 Usability Heuristics"
 description: "Optimize your usability evaluations and design more user-friendly products with this resource on essential assessment questions for the 10 usability heuristics."
 author: "Charlie Gedeon"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/659e0b3b668aa87e929f693e_blog-post.png"
+image: "/images/posts/10-usability-heuristics/cover.jpg"
 order: 9
 ---
 
@@ -181,4 +181,4 @@ Issues of impartiality, challenges maintaining a fresh mindset, and certain impe
 
 **Try our** [**Usability Heuristics Scorecard**](https://docs.google.com/spreadsheets/d/1XjnTH9QoQMDQlZokoS77CW6LD9uXWyfJIRRahPW6_dE/edit#gid=812266145) **to measure how effective your design system is for your users.**
 
-![A screenshot of the Usability Heuristics Scorecard made by Pragmatics Studio.](/webflow/images/659c2fa4e3e7e0bb3922119d/659e0b0fc0fc21b5999d7279_6404aa5627be9b5a35ce67a2_screenshot%20scorecard.png)
+![A screenshot of the Usability Heuristics Scorecard made by Pragmatics Studio.](/images/posts/10-usability-heuristics/screenshot-scorecard.png)

@@ -17,7 +17,7 @@ hero:
 <li>Users struggle to understand or trust AI-driven decisions</li><li>Conversations with AI feel unnatural or frustrating</li><li>AI interfaces lack context-awareness which confuses users</li><li>Implementation concerns are hindering AI adoption in your organization</li><li>AI-generated content feels disconnected from your brand voice</li><li>The potential of AI remains untapped due to poor user experience</li>
 </ul>
 <div class="clean-sub">
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66bf72ac652a94d2647b13ec_Waverly%20-%20Cover.png" alt="" loading="lazy"/>
+<img src="/images/pages/ai-products/waverly-cover.png" alt="" loading="lazy"/>
 <p class="clean-label">Case Study</p>
 <h3>Building More Cohesive Online Communities</h3>
 <div class="clean-twocols">

@@ -2,7 +2,7 @@
 title: "How AI and Metacognition are Shaping UX Research"
 description: "Advances in artificial intelligence are poised to deepen our understanding through metacognitive reflection. This piece discusses how AI not only accelerates the research process by identifying patterns and clustering insights but also prompts deeper thought on overlooked or underappreciated findings."
 author: "Charlie Gedeon"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/66eb919729f5ad0e923f2ac5_Metacognition%20Designer.png"
+image: "/images/posts/how-ai-and-metacognition-are-shaping-ux-research/cover.png"
 order: 7
 tag: "UX"
 ---
@@ -31,7 +31,7 @@ Integrating reflection tools directly into AI-powered interfaces would prompt re
 
 We know that AI can detect patterns and suggest themes researchers might overlook. For example, it can identify sentiment trends or recurring pain points across user groups. But AI, while fast, has its own limitations—such as biases introduced through training data. That’s where the partnership between human researchers and AI becomes crucial. In another experiment, we show how a combination of tagging, and connections can become a type of “Inspector” for words, like those in browsers developers use when coding.
 
-![Image of our Journal Reflection tool showing a word being inspected.](/webflow/images/659c2fa4e3e7e0bb3922119d/66eb919f7f62ab8b2a369411_66eb8909bd3c3b8e9d00cff2_Reflection-screen-blogpost.png)
+![Image of our Journal Reflection tool showing a word being inspected.](/images/posts/how-ai-and-metacognition-are-shaping-ux-research/reflection-screen-blogpost.png)
 
 *Image of our Journal Reflection tool showing a word being inspected.*
 

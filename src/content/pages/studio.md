@@ -8,7 +8,7 @@ hero:
   subheading: "We’re Pragmatics — with an “s.” Pragmatics is the art and science of how context contributes to meaning. It’s how a deep understanding of an entire situation — everything implicit and implied, said and unsaid — builds to a holistic understanding of what’s needed to influence that situation."
 ---
 
-<img class="clean-wide" src="/webflow/images/659c2fa4e3e7e0bb39221121/66b244df99cf24d005b221bc_Workshop-facilitation-Pic.png" alt="" loading="lazy"/>
+<img class="clean-wide" src="/images/pages/studio/workshop-facilitation-pic.webp" alt="" loading="lazy"/>
 
 <section class="clean-block" id="lab">
 <div class="clean-columns clean-columns--even">
@@ -69,12 +69,12 @@ hero:
 </div>
 <div class="clean-team">
 <article>
-<video autoplay muted loop playsinline preload="metadata" poster="/webflow/images/659c2fa4e3e7e0bb39221121/66b399c9ac5555aedaf62012_Charlie%20Portrait.png"><source src="/video/studio-team-1.mp4" type="video/mp4"/><source src="/video/studio-team-1.webm" type="video/webm"/></video>
+<video autoplay muted loop playsinline preload="metadata" poster="/images/pages/studio/charlie-portrait.jpg"><source src="/video/studio-team-1.mp4" type="video/mp4"/><source src="/video/studio-team-1.webm" type="video/webm"/></video>
 <h3>Charlie Gedeon</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
 </article>
 <article>
-<video autoplay muted loop playsinline preload="metadata" poster="/webflow/images/659c2fa4e3e7e0bb39221121/67ace0dfa56c0f403f0ca9bb_portrait%20allan.png"><source src="/video/studio-team-2.mp4" type="video/mp4"/><source src="/video/studio-team-2.webm" type="video/webm"/></video>
+<video autoplay muted loop playsinline preload="metadata" poster="/images/pages/studio/portrait-allan.png"><source src="/video/studio-team-2.mp4" type="video/mp4"/><source src="/video/studio-team-2.webm" type="video/webm"/></video>
 <h3>Allan Macdonald</h3>
 <p class="clean-label">Co-founder &amp; Senior ux designer</p>
 </article>

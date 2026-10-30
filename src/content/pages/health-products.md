@@ -17,7 +17,7 @@ hero:
 <li>Patients struggle to navigate through complex health information</li><li>Healthcare providers find the interface cumbersome during consultations</li><li>User adoption rates are lower than anticipated</li><li>Data privacy concerns are hindering user trust</li><li>The product fails to support continuity of care effectively</li><li>Integration with existing healthcare systems is problematic</li>
 </ul>
 <div class="clean-sub">
-<img src="/webflow/images/659c2fa4e3e7e0bb39221121/66bf8b79f10fac8d97609ec5_Senior-patient-using-health-53366111111%201.png" alt="" loading="lazy"/>
+<img src="/images/pages/health-products/senior-patient.jpg" alt="" loading="lazy"/>
 <p class="clean-label">HEALTH CASE STUDY</p>
 <h3>Empowering Patients with a Digital Health Coach</h3>
 <div class="clean-twocols">

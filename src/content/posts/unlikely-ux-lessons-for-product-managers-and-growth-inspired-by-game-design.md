@@ -2,14 +2,14 @@
 title: "Unlikely UX Lessons for Product Managers and Growth, Inspired by Game Design"
 description: "How adaptive storytelling, emotional interactions, effective onboarding, and contextual UI can elevate your product's user experience."
 author: "Allan Macdonald"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/6723a5f593038d25416462f9_Unlikely%20Game%20Lessons.png"
+image: "/images/posts/unlikely-ux-lessons-for-product-managers-and-growth-inspired-by-game-design/cover.png"
 order: 4
 tag: "UX"
 ---
 
 When we talk about learning from video games, the immediate association is often gamification. Add a points system, throw in some rewards, and you've got user engagement, right? But as a product manager, designer, or growth marketer you know engagement goes beyond just keeping users busy.
 
-![](/webflow/images/659c2fa4e3e7e0bb3922119d/6723aad53ada1c8203fa67b4_6723a723a5b1f1fea9911085_1718981324382.jpeg)
+![](/images/posts/unlikely-ux-lessons-for-product-managers-and-growth-inspired-by-game-design/image-1.jpeg)
 
 That’s what we discussed in our [Feel & Storytelling workshop](https://lu.ma/jb38pvyv) with [DesignConnect](https://lu.ma/DesignConnect) this past summer. The true power of game design lies in the subtle, deeply impactful lessons that make experiences meaningful—lessons that can elevate your product from functional to delightful.
 
@@ -23,7 +23,7 @@ At the core of every great game is an adaptable narrative. Game designers know i
 
 Games are masters of evoking emotion through their mechanics. In *What Remains of Edith Finch*, one sequence brilliantly conveys the monotony and escapism of a character’s job through simultaneous gameplay—the player both chops fish and navigates an elaborate daydream. The tension between these two actions is emotionally powerful.
 
-![What’s Remains of Edith Finch: To communicate the tedium of a factory fisherman, they make the controls tedious](/webflow/images/659c2fa4e3e7e0bb3922119d/6723aad63ada1c8203fa67c6_6723a899e98a80e49076ca27_edithfinchfish.gif)
+![What’s Remains of Edith Finch: To communicate the tedium of a factory fisherman, they make the controls tedious](/images/posts/unlikely-ux-lessons-for-product-managers-and-growth-inspired-by-game-design/edithfinchfish.gif)
 
 *What’s Remains of Edith Finch: To communicate the tedium of a factory fisherman, they make the controls tedious*
 
@@ -33,7 +33,7 @@ Games are masters of evoking emotion through their mechanics. In *What Remains o
 
 In *Super Mario Odyssey*, players learn basic moves early on, but as they progress, they uncover more advanced techniques, opening up new possibilities. The game accommodates novice players but also rewards those who seek mastery with deeper experiences.
 
-![Super Mario Odyssey: Over 8 jump types with only 2 controls](/webflow/images/659c2fa4e3e7e0bb3922119d/6723aad63ada1c8203fa67be_6723a91e3fddad92082ac094_marioOdysseyControls.png)
+![Super Mario Odyssey: Over 8 jump types with only 2 controls](/images/posts/unlikely-ux-lessons-for-product-managers-and-growth-inspired-by-game-design/marioodysseycontrols.png)
 
 *Super Mario Odyssey: Over 8 jump types with only 2 controls*
 
@@ -43,7 +43,7 @@ In *Super Mario Odyssey*, players learn basic moves early on, but as they progre
 
 Game designers make deliberate decisions about what information to show and when to show it. *Elden Ring* hides its Heads Up Display (HUD), which shows stats like health and items, during exploration and only brings it back during combat, focusing the player’s attention when it matters most. By contrast, many software products clutter the interface with everything, all at once.
 
-![Elden Ring: HUD appears in combat on the left and disappears when exploring on the right](/webflow/images/659c2fa4e3e7e0bb3922119d/6723aad53ada1c8203fa67a9_6723aa44cbb4cfbc09b22b88_eldenRing.png)
+![Elden Ring: HUD appears in combat on the left and disappears when exploring on the right](/images/posts/unlikely-ux-lessons-for-product-managers-and-growth-inspired-by-game-design/eldenring.png)
 
 *Elden Ring: HUD appears in combat on the left and disappears when exploring on the right*
 

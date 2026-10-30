@@ -2,7 +2,7 @@
 title: "The UX Trap: How Even Savvy VCs Can Miss Critical User Experience Flaws"
 description: "VCs can miss essential UX issues masked by sleek designs. Learn how to ask the right questions and dig deeper to spot hidden risks in startup investments."
 author: "Charlie Gedeon"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/66fdbb202c918aa3c1a0a1b8_VC%20UX%20Blindspot.png"
+image: "/images/posts/the-ux-trap-how-even-savvy-vcs-can-miss-critical-user-experience-flaws/cover.png"
 order: 6
 tag: "UX"
 ---

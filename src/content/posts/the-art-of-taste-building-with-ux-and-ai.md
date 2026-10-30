@@ -2,7 +2,7 @@
 title: "The Art of Taste-Building with UX and AI"
 description: "How evolving technologies are reshaping the relationship between personalization, exploration, and user experience."
 author: "Charlie Gedeon"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/67464b1c727869dcce995d02_AI,%20UX,%20and%20the%20Art%20of%20Taste-Building.png"
+image: "/images/posts/the-art-of-taste-building-with-ux-and-ai/cover.png"
 order: 2
 tag: "UX"
 featured: true

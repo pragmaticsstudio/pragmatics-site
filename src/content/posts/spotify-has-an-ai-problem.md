@@ -2,7 +2,7 @@
 title: "Spotify has an AI problem"
 description: "Beneath Spotify’s algorithmic charm lies a growing problem: a platform flooded with songs made by no one."
 author: "Allan Macdonald"
-image: "/webflow/images/659c2fa4e3e7e0bb3922119d/6927c537652b692f35d08b02_AI-music-image%20Large.jpeg"
+image: "/images/posts/spotify-has-an-ai-problem/cover.jpeg"
 order: 1
 tag: "UX"
 featured: true
@@ -18,7 +18,7 @@ My dad texted me: *“Have you heard of Mel McCoy from the Country Bayou Blues B
 
 That small exchange, sent a jolt through me. It made me realize how quickly the ground beneath us was shifting. Spotify was now quietly filling with music made by absolutely no one at all.
 
-![AI image of blue man named Mel McCoy](/webflow/images/659c2fa4e3e7e0bb3922119d/6927c5498a2bdfd2d3ec1b4e_0%252A55WU9Pc0Fb0iBzXT.jpeg)
+![AI image of blue man named Mel McCoy](/images/posts/spotify-has-an-ai-problem/mel-mccoy.jpeg)
 
 *AI image of blue man named Mel McCoy*
 
