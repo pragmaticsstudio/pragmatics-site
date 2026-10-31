@@ -18,7 +18,7 @@ Run `npm run check` before you push. It builds the site and lists every link or 
 |---|---|
 | Blog posts | `src/content/posts/<slug>.md` |
 | Case studies | `src/content/caseStudies/<slug>.md` |
-| Pages (Studio, Contact, Learn, product pages) | `src/content/pages/<name>.md` |
+| Pages (Studio, Learn, product pages) | `src/content/pages/<name>.md` |
 | Homepage, Work, Blog and Services page text | `src/content/pages/index.md`, `case-studies.md`, `blog.md`, `services/index.md` |
 | Images | `public/images/<collection>/<slug>/` |
 | Videos | `public/video/` |

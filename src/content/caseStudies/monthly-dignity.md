@@ -3,7 +3,7 @@ title: "Building a Website to Support Menstrual Health and Equity"
 description: "We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal"
 subheading: "We revitalized Monthly Dignity's website to reflect their vibrant personality and mission to combat period poverty in Montreal"
 client: "Monthly Dignity"
-cover: "/images/case-studies/monthly-dignity/0.png"
+cover: "/images/case-studies/monthly-dignity/0.webp"
 coverAlt: "Monthly Dignity case study, cover"
 order: 6
 featured: true
@@ -25,7 +25,7 @@ We introduced a vibrant color palette with warm hues to evoke a sense of communi
 
 Understanding the importance of accessibility, we restructured the website's information architecture to make navigation intuitive. We developed clear, concise sections that address the needs of their diverse audience, including:
 
-![Monthly Dignity case study, image 1](/images/case-studies/monthly-dignity/1.png)
+![Monthly Dignity case study, image 1](/images/case-studies/monthly-dignity/1.webp)
 
 - **For Individuals**: Information on how to access free menstrual products and educational resources.
 - **For Donors**: Highlighting the impact of donations, with straightforward pathways to contribute.
@@ -62,4 +62,4 @@ To ensure the Monthly Dignity team can manage and update the website without ded
 
 The revamped website for Monthly Dignity now truly reflects the organization's bright personality and critical mission. It makes essential information accessible, engages and inspires donors and partners, and empowers the team to manage content independently. We are proud to support Monthly Dignity in their mission to achieve menstrual equity in Montreal and beyond.
 
-![Monthly Dignity case study, image 3](/images/case-studies/monthly-dignity/3.png)
+![Monthly Dignity case study, image 3](/images/case-studies/monthly-dignity/3.webp)
